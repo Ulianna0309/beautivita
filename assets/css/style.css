@@ -767,6 +767,20 @@ template {
   display: flex;
 }
 
+.advantage-container .advantage__overlay {
+  opacity: 0.5;
+  background-color: #072652;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
 .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left, .portfolio-container__left, .team-container__left {
   margin-left: 325px;
   margin-right: 50px;
@@ -2246,7 +2260,7 @@ iframe {
     display: block !important;
   }
   .portfolio {
-    padding: 35px;
+    padding: 35px 0 35px 35px;
   }
   .portfolio .portfolio-container {
     grid-template-areas: "b1 b2 b3" "b4 b5 b6" "b7 b8 b9";
@@ -2332,6 +2346,28 @@ iframe {
     display: block !important;
     margin-bottom: 90px;
   }
+  .title-repeat {
+    font-size: 34px !important;
+    line-height: 100%;
+  }
+  .portfolio .btn-danger {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 13px 28px;
+  }
+  .team .slider__arrow {
+    display: none !important;
+  }
+  .team .title__team {
+    margin-top: 130px;
+  }
+  .touch .touch-map__contact {
+    display: block !important;
+  }
+  .touch .touch-map__contact a {
+    display: block;
+    margin-bottom: 23px;
+  }
 }
 
 @media (max-width: 768px) and (max-width: 540px) {
@@ -2347,8 +2383,10 @@ iframe {
   }
   .advantage-right__btn-play {
     position: absolute;
-    left: 40%;
-    top: 30%;
+    left: 45%;
+    top: 40%;
+    width: 42px;
+    z-index: 5;
   }
   .portfolio .portfolio-container {
     display: grid;
@@ -2361,6 +2399,9 @@ iframe {
   }
   .feature-container .feature-container__list {
     display: block !important;
+  }
+  .feature-container .feature-container__list__item {
+    margin-bottom: 20px;
   }
   .team .team-container {
     margin-right: 0;
@@ -2393,5 +2434,12 @@ iframe {
     text-align: center;
     height: auto;
     width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  h2 {
+    font-size: 34px !important;
+    line-height: 44px;
   }
 }
