@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'Mont Book';
+  src: url('../../assets/font-mont/Mont-Book.eot');
+  src: local('../../Mont Book'), local('Mont-Book'),
+  url('../../assets/font-mont/Mont-Book.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-Book.woff') format('woff'),
+  url('../../assets/font-mont/Mont-Book.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-LightItalic.eot');
+  src: local('../../Mont Light Italic'), local('Mont-LightItalic'),
+  url('../../assets/font-mont/Mont-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-LightItalic.woff') format('woff'),
+  url('../../assets/font-mont/Mont-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-BlackItalic.eot');
+  src: local('../../Mont Black Italic'), local('Mont-BlackItalic'),
+  url('../../assets/font-mont/Mont-BlackItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-BlackItalic.woff') format('woff'),
+  url('../../assets/font-mont/Mont-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-ExtraLight.eot');
+  src: local('../../Mont ExtraLight'), local('Mont-ExtraLight'),
+  url('../../assets/font-mont/Mont-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-ExtraLight.woff') format('woff'),
+  url('../../assets/font-mont/Mont-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-ExtraLightItalic.eot');
+  src: local('../../Mont ExtraLight Italic'), local('Mont-ExtraLightItalic'),
+  url('../../assets/font-mont/Mont-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-ExtraLightItalic.woff') format('woff'),
+  url('../../assets/font-mont/Mont-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont DEMO';
+  src: url('../../assets/font-mont/Mont-DEMOExtraLight.eot');
+  src: local('../../Mont DEMO ExtraLight'), local('Mont-DEMOExtraLight'),
+  url('../../assets/font-mont/Mont-DEMOExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-DEMOExtraLight.woff') format('woff'),
+  url('../../assets/font-mont/Mont-DEMOExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont Hairline';
+  src: url('../../assets/font-mont/Mont-Hairline.eot');
+  src: local('../../Mont Hairline'), local('Mont-Hairline'),
+  url('../../assets/font-mont/Mont-Hairline.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-Hairline.woff') format('woff'),
+  url('../../assets/font-mont/Mont-Hairline.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-Heavy.eot');
+  src: local('../../Mont Heavy'), local('Mont-Heavy'),
+  url('../../assets/font-mont/Mont-Heavy.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-Heavy.woff') format('woff'),
+  url('../../assets/font-mont/Mont-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont Hairline';
+  src: url('../../assets/font-mont/Mont-HairlineItalic.eot');
+  src: local('../../Mont Hairline Italic'), local('Mont-HairlineItalic'),
+  url('../../assets/font-mont/Mont-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-HairlineItalic.woff') format('woff'),
+  url('../../assets/font-mont/Mont-HairlineItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-ThinItalic.eot');
+  src: local('../../Mont Thin Italic'), local('Mont-ThinItalic'),
+  url('../../assets/font-mont/Mont-ThinItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-ThinItalic.woff') format('woff'),
+  url('../../assets/font-mont/Mont-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-Bold.eot');
+  src: local('../../Mont Bold'), local('Mont-Bold'),
+  url('../../assets/font-mont/Mont-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-Bold.woff') format('woff'),
+  url('../../assets/font-mont/Mont-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont Regular';
+  src: url('../../assets/font-mont/Mont-RegularItalic.eot');
+  src: local('../../Mont Regular Italic'), local('Mont-RegularItalic'),
+  url('../../assets/font-mont/Mont-RegularItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-RegularItalic.woff') format('woff'),
+  url('../../assets/font-mont/Mont-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-BoldItalic.eot');
+  src: local('../../Mont Bold Italic'), local('Mont-BoldItalic'),
+  url('../../assets/font-mont/Mont-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-BoldItalic.woff') format('woff'),
+  url('../../assets/font-mont/Mont-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-SemiBold.eot');
+  src: local('Mont SemiBold'), local('Mont-SemiBold'),
+  url('../../assets/font-mont/Mont-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-SemiBold.woff') format('woff'),
+  url('../../assets/font-mont/Mont-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-SemiBoldItalic.eot');
+  src: local('Mont SemiBold Italic'), local('Mont-SemiBoldItalic'),
+  url('../../assets/font-mont/Mont-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-SemiBoldItalic.woff') format('woff'),
+  url('../../assets/font-mont/Mont-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-Thin.eot');
+  src: local('../../Mont Thin'), local('Mont-Thin'),
+  url('../../assets/font-mont/Mont-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-Thin.woff') format('woff'),
+  url('../../assets/font-mont/Mont-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-HeavyItalic.eot');
+  src: local('../../Mont Heavy Italic'), local('Mont-HeavyItalic'),
+  url('../../assets/font-mont/Mont-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-HeavyItalic.woff') format('woff'),
+  url('../../assets/font-mont/Mont-HeavyItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-Light.eot');
+  src: local('../../Mont Light'), local('Mont-Light'),
+  url('../../assets/font-mont/Mont-Light.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-Light.woff') format('woff'),
+  url('../../assets/font-mont/Mont-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont DEMO';
+  src: url('../../assets/font-mont/Mont-DEMOHeavy.eot');
+  src: local('../../Mont DEMO Heavy'), local('Mont-DEMOHeavy'),
+  url('../../assets/font-mont/Mont-DEMOHeavy.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-DEMOHeavy.woff') format('woff'),
+  url('../../assets/font-mont/Mont-DEMOHeavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-Black.eot');
+  src: local('../../Mont Black'), local('Mont-Black'),
+  url('../../assets/font-mont/Mont-Black.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-Black.woff') format('woff'),
+  url('../../assets/font-mont/Mont-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont Book';
+  src: url('../../assets/font-mont/Mont-BookItalic.eot');
+  src: local('../../Mont Book Italic'), local('Mont-BookItalic'),
+  url('../../assets/font-mont/Mont-BookItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-BookItalic.woff') format('woff'),
+  url('../../assets/font-mont/Mont-BookItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../../assets/font-mont/Mont-Regular.eot');
+  src: local('../../Mont Regular'), local('Mont-Regular'),
+  url('../../assets/font-mont/Mont-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../assets/font-mont/Mont-Regular.woff') format('woff'),
+  url('../../assets/font-mont/Mont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
