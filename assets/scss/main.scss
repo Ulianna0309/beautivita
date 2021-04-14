@@ -814,6 +814,9 @@
       }
     }
   }
+  .collapse {
+    display: none;
+  }
 }
 
 
@@ -910,7 +913,25 @@
 @media (max-width:992px) {
   .section-pink .advantage-container {
     display: block;
-  }
+
+    .advantage-left {
+      .btn-primary {
+        background-color: transparent;
+        border: none;
+        color: #F55449;
+        font-style: italic;
+        padding: 0;
+        width: auto;
+        font-size: 26px;
+        line-height: 38px;
+
+      }
+      .card-body{
+        background-color: transparent;
+      }
+    }
+
+
   .title-repeat{
     padding-top: 25px;
   }
@@ -948,15 +969,6 @@
 }
 @media (max-width:768px) {
   .advantage-left {
-    .btn-primary {
-      background-color: transparent;
-      border: none;
-      color: #F55449;
-      font-style: italic;
-      padding: 0;
-      width: auto;
-      font-size: 26px;
-      line-height: 38px;
 
       &:hover, &:focus, &:active, &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
         color: #F55449;
@@ -968,7 +980,7 @@
     }
 
     .collapse .card {
-      background: transparent;
+      background-color: #072652;
       padding: 0;
     }
   }
