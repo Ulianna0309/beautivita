@@ -63,41 +63,6 @@
     </div>
     </div>
 </header>
-<!--<section class="slider" id="intro">
- <div class="slider__wrapper">
-   <div class=""><img src="assets/img/header-slider.svg" alt=""></div>
-   <div class=""><img src="assets/img/header-slider.svg" alt=""></div>
-   <div class=""><img src="assets/img/header-slider.svg" alt=""></div>
- </div>
-</section>
-<nav class="header-navbar navbar fixed-top navbar-expand-lg navbar-dark" id="header-navbar">
- <div class="container-fluid">
-   <a class="navbar-brand" href="#">
-     <img src="assets/img/logo.svg" alt="logo">
-   </a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-navbar-collapse"
-           aria-controls="header-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-   </button>
-   <div class="collapse navbar-collapse justify-content-end" id="header-navbar-collapse">
-     <ul class="navbar-nav">
-       <li class="nav-item active">
-         <a class="nav-link js-scroll" href="#salon">SALON</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link js-scroll" href="#stylist">STYLISTS</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link js-scroll" href="#services">SERVICES</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link js-scroll" href="#contact">CONTACT</a>
-       </li>
-
-     </ul>
-   </div>
- </div>
-</nav>-->
  <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -154,48 +119,23 @@
      <span class="sr-only">Next</span>
    </a>
  </section>
-
 <main>
 <section class="section-pink">
   <div class="advantage-container">
     <div class="advantage-left">
       <h2 class="advantage-title title-repeat">The advantages of <img src="assets/img/logo.svg" alt="logo"></h2>
       <div class="advantage-left__text">
-        <p class="advantage-text d-md-none">The classic salone in a nutshell is my childhood dream come true. Ever since I was 8 years old I knew what I wanted to dedicate my life’s work too – being a hairstylist and providing my clients with the highest quality service and confidence-building looks.</p>
+        <p class="advantage-text d-none d-lg-block">The classic salone in a nutshell is my childhood dream come true. Ever since I was 8 years old I knew what I wanted to dedicate my life’s work too – being a hairstylist and providing my clients with the highest quality service and confidence-building looks.</p>
         <p>
-          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Link with href
-          </a>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Button with data-target
-          </button>
-        </p>
+          <p class="advantage-text d-lg-none d-block d-flex align-items-end">The classic salone in a nutshell is my childhood dream come true...  <a class="btn btn-primary d-lg-none d-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        more
+      </a>
+      </p>
         <div class="collapse" id="collapseExample">
           <div class="card card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            <p class="advantage-text">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
           </div>
         </div>
-        <article class="post">
-          <header>
-            <div class="title">
-              <h2><a href="index.html">blah blah</a></h2>
-              <p>Sub Header</p>
-            </div>
-            <div class="meta">
-              <time class="published" datetime="2017-01-14">November 1, 2017</time>
-              <a href="#" class="author"><span class="name">John Doe</span><img src="images/author-avatar.png" alt="" /></a>
-            </div>
-          </header>
-          <a href="index.html" class="image featured"><img src="images/who_iam.jpg" alt="" /></a>
-          <p>Default text
-            <br><span  class="hidden-content">Toggle this text. Show this text when "continue reading" button is clicked. Once the button is clicked change the button value to "read less". Once the "read less" button is clicked hide this text.</span>
-          </p>
-          <footer>
-            <ul class="actions">
-              <li><a href="" class="button big">Continue Reading</a></li>
-            </ul>
-          </footer>
-        </article>
         <button type="button" class="btn btn-danger">Become a member of our team</button>
       </div>
     </div>
@@ -246,15 +186,45 @@
           </div>
       </div>
       <div class="personal-container__items-mobile">
-        <div class="personal-container__item-mobile">
-          <div class="personal-container__number">1</div>
-          <div class="personal-container__line"></div>
-          <p class="personal-container__text first">Download our app and register in it.</p>
-        </div>
-        <div class="personal-container__item-mobile">
-          <div class="personal-container__number">2</div>
-          <p class="personal-container__text second text-center">Choose a service and indicate the time and address.</p>
-          <div class="personal-container__line"></div>
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="personal-carousel carousel-item active">
+              <div class="personal-carousel__text">
+              <div class="personal-container__number">1</div>
+              <div class="personal-container__line"></div>
+              </div>
+              <p class="personal-container__text first">Download our app and register in it.</p>
+            </div>
+            <div class="personal-carousel carousel-item">
+              <div class="personal-carousel__text">
+                <div class="personal-container__number">2</div>
+                <div class="personal-container__line"></div>
+              </div>
+              <p class="personal-container__text second text-center">Choose a service and indicate the time and address.</p>
+            </div>
+            <div class="personal-carousel carousel-item">
+              <div class="personal-carousel__text">
+              <div class="personal-container__number">3</div>
+                <div class="personal-container__line"></div>
+              </div>
+              <p class="personal-container__text third text-center">Pay for the order and wait for the stylist.</p>
+            </div>
+            <div class="personal-carousel carousel-item">
+              <div class="personal-carousel__text">
+              <div class="personal-container__number">4</div>
+                <div class="personal-container__line"></div>
+              </div>
+              <p class="personal-container__text four text-right">The master will come to you on time andwill create a unique image.</p>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Предыдущий</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Следующий</span>
+          </a>
         </div>
       </div>
     </div>
