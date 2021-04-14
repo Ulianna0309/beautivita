@@ -2193,6 +2193,15 @@ iframe {
   .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile .btn-nav__mobile {
     display: block;
   }
+  .title-repeat {
+    padding-top: 25px;
+  }
+  .title-repeat:before {
+    left: -50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
   .section-pink .advantage-container {
     display: block;
   }
@@ -2208,15 +2217,6 @@ iframe {
   }
   .section-pink .advantage-container .advantage-left .card-body {
     background-color: transparent;
-  }
-  .section-pink .advantage-container .title-repeat {
-    padding-top: 25px;
-  }
-  .section-pink .advantage-container .title-repeat:before {
-    left: -50px;
-    top: 0;
-    bottom: 0;
-    right: 0;
   }
   .section-pink .advantage-container .advantage-left, .section-pink .advantage-container .feature-container__left, .section-pink .advantage-container .feature-container__list, .section-pink .advantage-container .creative-container__left {
     margin-left: 0;
@@ -2377,9 +2377,65 @@ iframe {
     display: block;
     margin-bottom: 23px;
   }
+  .personal-container {
+    padding: 20px 30px 20px 32px;
+  }
+  .partners-icon {
+    width: 80%;
+  }
+  .creative-container .card .card__tooltip .tooltip-title {
+    font-size: 1em;
+  }
+  .creative-container .card .card__tooltip {
+    padding: 5px;
+    top: 15%;
+    font-size: 0.7em;
+    margin-bottom: 5px;
+  }
+  .portfolio .title-repeat {
+    color: #072652;
+    margin-bottom: 30px;
+  }
+  .team .team-container {
+    padding: 30px 20px;
+  }
+  .team .btn-danger {
+    font-size: 16px;
+    padding: 10px 105px;
+  }
+  .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+  }
+  .header {
+    height: 112px;
+    padding: 20px 20px 20px 20px;
+  }
+  .slick-slider .slick-slide.slick-center img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) and (max-width: 320px) {
+  .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+  .carousel-caption h1 {
+    padding-top: 50px !important;
+  }
+  .header_logo-link img {
+    width: 90% !important;
+  }
+  .title-repeat {
+    font-size: 30px !important;
+    padding-top: 25px;
+  }
 }
 
 @media (max-width: 992px) and (max-width: 540px) {
+  .advantage-text {
+    display: block !important;
+  }
   .header-btn__down {
     margin-bottom: 24px;
     display: block;
@@ -2447,6 +2503,12 @@ iframe {
 }
 
 @media (max-width: 992px) and (max-width: 768px) {
+  .title-repeat:before {
+    left: -50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
   .advantage-left:hover, .advantage-left:focus, .advantage-left:active, .advantage-left:not(:disabled):not(.disabled).active, .advantage-left:not(:disabled):not(.disabled):active, .advantage-left .show > .btn-primary.dropdown-toggle {
     color: #F55449;
     background-color: transparent;
