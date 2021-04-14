@@ -950,6 +950,10 @@ template {
   padding: 62px 0 148px 0;
 }
 
+.creative-container .carousel {
+  display: none;
+}
+
 .creative-container .creative-title {
   color: #072652;
   margin-bottom: 115px;
@@ -2199,7 +2203,7 @@ iframe {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .advantage-left .btn-primary .card-body {
+  .advantage-left .collapse .card {
     background: transparent;
     padding: 0;
   }
@@ -2224,6 +2228,15 @@ iframe {
   .creative-container {
     padding: 35px;
   }
+  .creative-container .creative-container__bottom {
+    display: none !important;
+  }
+  .creative-container .carousel-inner .carousel-item {
+    height: auto;
+  }
+  .creative-container .carousel {
+    display: block !important;
+  }
   .portfolio {
     padding: 35px;
   }
@@ -2235,6 +2248,30 @@ iframe {
   }
   .team .team-container {
     padding: 35px;
+  }
+  .team .team-container .title__team {
+    margin-left: 0;
+  }
+  .team .team-container .slider__arrow {
+    margin-right: 0;
+  }
+  .team .team-container .personal-container__items {
+    display: none;
+  }
+  .team .team-container .personal-carousel__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .team .team-container .personal-container__text.four, .team .team-container .personal-container__text.first, .team .team-container .personal-container__text.second, .team .team-container .personal-container__text.third {
+    max-width: 100%;
+    text-align: left !important;
+  }
+  .team .team-container .personal-container__items-mobile .carousel-inner .carousel-item {
+    height: auto;
   }
   .touch .touch-container {
     display: block !important;
@@ -2257,8 +2294,12 @@ iframe {
         -ms-flex-align: center;
             align-items: center;
   }
+  .personal .personal-container__items {
+    display: none;
+  }
   .personal .personal-container__items-mobile {
     display: block;
+    margin-top: 40px;
   }
   .personal .personal-container__items-mobile .carousel {
     background-color: transparent;
