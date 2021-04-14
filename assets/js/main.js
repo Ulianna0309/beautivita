@@ -109,11 +109,16 @@ $(document).ready(function () {
 }());
 $('.personal-container__items-mobile').slick({
     dots: true,
-    infinite: true,
-    speed: 300,
+    speed: 500,
     slidesToShow: 1,
     adaptiveHeight: true
 });
+
+$('.actions .button.big').on('click', function(e){
+    e.preventDefault();
+    $(this).text( $(this).text() == "Continue Reading" ? "Show Less" : "Continue Reading" );
+    $(this).closest('article.post').find('.hidden-content').slideToggle()
+})
 
 
 
