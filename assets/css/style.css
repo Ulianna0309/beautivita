@@ -2174,7 +2174,7 @@ iframe {
     padding-top: 25px;
   }
   .title-repeat:before {
-    left: -35px;
+    left: -50px;
     top: 0;
     bottom: 0;
     right: 0;
@@ -2318,5 +2318,23 @@ iframe {
   }
   .personal .personal-container__items-mobile .carousel-inner .carousel-item .carousel-inner .carousel-item {
     height: auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .header-btn__down {
+    margin-bottom: 24px;
+    display: block;
+  }
+  .carousel .carousel-indicators {
+    bottom: 50px;
+  }
+  .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left {
+    margin-right: 0;
+  }
+  .advantage-right__btn-play {
+    position: absolute;
+    left: 40%;
+    top: 30%;
   }
 }
