@@ -923,6 +923,28 @@
   .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left{
     margin-left: 0;
   }
+  .partners .partners__container {
+    grid-template-areas:
+       "g1 g2"
+       "g1 g3"
+       "g4 g5"
+       "g6 g7"
+       "g8 g9";
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+  }
+  .team .personal-container__items{
+    margin-left: 60px !important;
+  }
+  .creative-container .carousel {
+    display: block !important;
+  }
+  .creative-container .creative-container__bottom {
+    display: none !important;
+  }
 }
 @media (max-width:768px) {
   .advantage-left {
