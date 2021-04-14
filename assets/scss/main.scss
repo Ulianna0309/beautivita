@@ -88,6 +88,9 @@
 }
 .feature-container{
   padding: 62px 0;
+  &__list{
+    display: block !important;
+  }
   .title-repeat{
     color: #072652;
   }
@@ -390,6 +393,9 @@
     background: #072652;
     padding: 55px 60px 82px 0;
     margin-right: 185px;
+  }
+  .personal-container__items-mobile{
+    display: none !important;
   }
   .title-repeat:before{
     background-color: #464646;
@@ -978,6 +984,7 @@
   }
   .team .team-container {
     padding: 35px;
+
     .title__team{
       margin-left: 0;
     }
@@ -1038,7 +1045,9 @@
         .personal-container__text.four, .personal-container__text.first, .personal-container__text.second, .personal-container__text.third {
           max-width: 100%;
           text-align: left !important;
+          margin-right: 0;
         }
+
         .carousel-inner .carousel-item {
           height: auto;
         }
@@ -1046,16 +1055,22 @@
       }
     }
   }
+  .team{
+    .personal-container__items-mobile{
+      display: block !important;
+      margin-bottom: 90px;
+    }
 }
-@media(max-width: 540px){
-  .header-btn__down{
+
+@media(max-width: 540px) {
+  .header-btn__down {
     margin-bottom: 24px;
     display: block;
   }
   .carousel .carousel-indicators {
     bottom: 50px;
   }
-  .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left{
+  .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left {
     margin-right: 0;
   }
   .advantage-right__btn-play {
@@ -1063,7 +1078,59 @@
     left: 40%;
     top: 30%;
   }
-}
+  .portfolio .portfolio-container {
+    display: grid;
+      grid-template-areas:
+        "b1 b2"
+        "b3 b4";
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 28px !important;
+  }
+  .portfolio-icon:nth-last-child(-n+6){
+    display: none;
+  }
+  .feature-container {
+    .feature-container__list {
+      display: block !important;
+    }
+  }
+
+  .team .team-container {
+    margin-right: 0;
+
+    .slick-slider__item {
+      margin: 0;
+    }
+
+    .slick-slider__item:hover {
+      transform: translateY(6px);
+
+      .card__tooltip {
+        top: 0;
+        left: 0;
+      }
+
+      .slick-slider .slick-slide.slick-center:hover .card__tooltip {
+        left: 0;
+        bottom: 0;
+        transform: rotate(180deg);
+      }
+
+      .card__tooltip {
+        width: 100%;
+        top: 26%;
+        border-radius: 24px 24px 0 0;
+      }
+
+      .slick-slider__item .slick-slider__item .slider-text {
+        text-align: center;
+        height: auto;
+        width: 100%;
+      }
+    }
+  }}}
+
+
 
 
 
