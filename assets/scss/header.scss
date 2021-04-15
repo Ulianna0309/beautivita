@@ -60,9 +60,13 @@
         line-height: 24px;
         text-align: right;
         color: #FFFFFF;
+        transition: 0.5s;
         &:first-child{
           margin-left: 1.25em;
           margin-right: 33px;
+        }
+        &:hover{
+          background-color: #F55449;
         }
       }
     }
@@ -333,7 +337,11 @@ position: relative;
     }
   }
 }
-
+@media(max-width: 540px){
+  .carousel-caption h1 {
+    padding-top: 50px !important;
+  }
+}
 
 
 

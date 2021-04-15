@@ -70,14 +70,14 @@ $('.slick-slider').slick({
             }
         },
         {
-            breakpoint: 480, // брекпоинтов может быть сколько угодно
+            breakpoint: 540, // брекпоинтов может быть сколько угодно
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
         }
     ],
-    slidesToShow: 3,
+    slidesToShow: 2,
     dots: true,
     arrows: true,
     swipe: true,
@@ -107,6 +107,8 @@ $(document).ready(function () {
         }
     };
 }());
+
+
 
 
 
