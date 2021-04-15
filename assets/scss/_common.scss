@@ -53,8 +53,13 @@ li{
   content: "";
   background-color: #666666;
 }
+/*.carousel-control-next-icon {
+  background-image: none !important;
+  content: ">";
+  color: red;
+}*/
 
-@media (max-width: 1800px) {
+  @media (max-width: 1800px) {
   h2 {
     font-size: 3.125em !important;
     line-height: 3.125em;

@@ -64,6 +64,12 @@ li {
   background-color: #666666;
 }
 
+/*.carousel-control-next-icon {
+  background-image: none !important;
+  content: ">";
+  color: red;
+}*/
+
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -2203,7 +2209,7 @@ iframe {
     top: 96px;
     right: 0;
     width: 260px;
-    height: 50vh;
+    height: 100vh;
     text-align: left;
     padding: 50px 40px 0 40px;
     background-color: rgba(35, 53, 79, 0.8);
@@ -2382,6 +2388,7 @@ iframe {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 50px;
+    margin-bottom: 50px;
   }
   .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left, .portfolio-container__left, .team-container__left {
     margin-left: 0;
@@ -2522,6 +2529,12 @@ iframe {
     width: 100%;
     height: auto;
   }
+  .personal h2 {
+    max-width: 70%;
+  }
+  .personal .personal-container__items-mobile .carousel-control-next {
+    top: -200px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -2556,7 +2569,8 @@ iframe {
     display: grid;
     grid-template-areas: "b1 b2" "b3 b4";
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 28px !important;
+    margin-left: 0 !important;
+    margin-bottom: 0;
   }
   .portfolio-icon:nth-last-child(-n+6) {
     display: none;
@@ -2618,6 +2632,8 @@ iframe {
     font-size: 20px;
     line-height: 23px;
     padding: 13px 28px;
+    width: 100%;
+    text-align: center;
   }
   .team .slider__arrow {
     display: none !important;
@@ -2627,7 +2643,6 @@ iframe {
   }
   .team .team-container {
     margin-right: 0;
-    padding: 0 !important;
   }
   .team .title__team {
     margin-top: 130px;
@@ -2642,6 +2657,38 @@ iframe {
   .header_logo-link img {
     width: 80% !important;
     padding-top: 10px;
+  }
+  .team .personal-container__items-mobile .carousel-control-next {
+    top: -200px !important;
+  }
+  .team .personal-container__items-mobile .carousel-control-next .glyphicon-chevron-left,
+  .team .personal-container__items-mobile .carousel-control-next .glyphicon-chevron-right {
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: -16px;
+    width: 32px;
+    opacity: 0.7 !important;
+  }
+  .team .personal-container__items-mobile .carousel-control-next:hover .glyphicon-chevron-left,
+  .team .personal-container__items-mobile .carousel-control-next:hover .glyphicon-chevron-right {
+    opacity: 1 !important;
+  }
+  .personal .personal-container__items-mobile .carousel-control-next {
+    top: -250px !important;
+  }
+  .personal .personal-container__items-mobile .carousel-control-next .glyphicon-chevron-left,
+  .personal .personal-container__items-mobile .carousel-control-next .glyphicon-chevron-right {
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: -16px;
+    width: 32px;
+    opacity: 0.7 !important;
+  }
+  .personal .personal-container__items-mobile .carousel-control-next:hover .glyphicon-chevron-left,
+  .personal .personal-container__items-mobile .carousel-control-next:hover .glyphicon-chevron-right {
+    opacity: 1 !important;
   }
 }
 
@@ -2679,11 +2726,15 @@ iframe {
     color: #072652;
     margin-bottom: 30px;
   }
+  .portfolio .btn-danger__icon {
+    margin-left: 5px;
+    width: 22px;
+  }
   .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
     color: #fff;
   }
-  .slick-slider .slick-slide.slick-center img {
-    width: 100%;
+  .personal h2 {
+    max-width: 65%;
   }
   .personal .personal-container__items-mobile .carousel-inner .carousel-item {
     height: auto;
@@ -2692,13 +2743,10 @@ iframe {
     top: -150px;
     font-size: 40px;
   }
-  .team .carousel-control-next, .team .carousel-control-prev {
-    top: -150px;
-    font-size: 40px;
-  }
   .team .btn-danger {
     font-size: 16px;
-    padding: 10px 105px;
+    padding: 10px 90px;
+    line-height: 100%;
   }
   .team .team-container {
     padding: 30px !important;
@@ -2707,5 +2755,11 @@ iframe {
     height: 460px;
     margin-left: 10px !important;
     margin-right: 10px !important;
+  }
+  .team .team-container .slick-slider .slick-slide.slick-center img {
+    width: 300px !important;
+  }
+  .team .team-container .personal-container__items-mobile .carousel-control-next {
+    top: -230px !important;
   }
 }
