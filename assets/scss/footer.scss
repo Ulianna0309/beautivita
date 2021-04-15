@@ -17,7 +17,8 @@
       }
     }
     &__right{
-      nav{
+      nav ul{
+        display: flex;
         flex-direction: row;
         margin-bottom: 20px;
         .nav-link{
@@ -79,7 +80,7 @@
         text-align: center;
       }
     }
-    .footer-container__right nav{
+    .footer-container__right nav ul{
       flex-direction: column;
       .nav-link{
       margin-right: 0;
