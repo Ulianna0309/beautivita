@@ -1408,7 +1408,7 @@ iframe {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  height: auto;
+  height: 662px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2450,6 +2450,17 @@ iframe {
   .team .team-container .slick-slider .slick-track {
     max-height: 500px;
   }
+  .team .team-container .slick-slider .slick-slide.slick-current .card__tooltip p, .team .team-container .team .slick-slider .slick-slide.slick-center .card__tooltip p {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  .team .team-container .slick-slider .slick-slide.slick-current .card__tooltip, .team .team-container .team .slick-slider .slick-slide.slick-center .card__tooltip {
+    padding: 20px;
+  }
+  .team .team-container .slick-slider .slick-slide.slick-current .card__tooltip p:before, .team .team-container .team .slick-slider .slick-slide.slick-center .card__tooltip p:before {
+    top: 20px !important;
+    left: 25%;
+  }
   .team .btn-danger {
     margin-top: 90px;
   }
@@ -2630,11 +2641,6 @@ iframe {
     border-radius: 24px 24px 0 0;
     padding: 20px;
   }
-  .team .team-container .slick-slider .slick-slide.slick-current .card__tooltip p, .team .team-container .team .slick-slider .slick-slide.slick-center .card__tooltip p {
-    margin: 10px 0;
-    font-size: 14px;
-    line-height: 16px;
-  }
   .team .team-container .slick-slider .slick-slide.slick-current .card__tooltip p:before, .team .team-container .team .slick-slider .slick-slide.slick-center .card__tooltip p:before {
     position: absolute;
     top: 20px;
@@ -2783,10 +2789,18 @@ iframe {
   .team .team-container .slick-slider .slick-slide.slick-center {
     height: 410px;
   }
+  .team .team-container .slick-slider .slick-slide.slick-current .card__tooltip p, .team .team-container .team .slick-slider .slick-slide.slick-center .card__tooltip p {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 10px 0;
+  }
   .team .team-container .slick-slider .slick-slider__item {
     height: 320px;
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+  .team .team-container .slick-slider .slick-track {
+    max-height: 400px;
   }
   .team .team-container .btn-danger {
     font-size: 16px;

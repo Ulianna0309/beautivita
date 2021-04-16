@@ -66,7 +66,7 @@ $('.slick-slider').slick({
             settings: {
                 // вносим изменения на ширине 1024 и ниже
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 1
             }
         },
         {
