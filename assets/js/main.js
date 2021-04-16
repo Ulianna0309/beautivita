@@ -43,7 +43,7 @@ $(document).ready(function() {
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
-        var th = $(this);
+        const th = $(this);
         $.ajax({
             type: "POST",
             url: "mail.php", //Change
@@ -62,23 +62,23 @@ $('.slick-slider').slick({
     centerMode: true,
     responsive: [
         {
-            breakpoint: 1000, // - от какой ширины изменять настройки(1024 и ниже)
+            breakpoint: 1200, // - от какой ширины изменять настройки(1024 и ниже)
             settings: {
                 // вносим изменения на ширине 1024 и ниже
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 2,
+                slidesToScroll: 2
             }
         },
         {
-            breakpoint: 540, // брекпоинтов может быть сколько угодно
+            breakpoint: 768, // брекпоинтов может быть сколько угодно
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
         }
     ],
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     dots: true,
     arrows: true,
     swipe: true,
