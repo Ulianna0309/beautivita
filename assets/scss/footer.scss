@@ -83,8 +83,18 @@
     .footer-container__right nav ul{
       flex-direction: column;
       .nav-link{
-      margin-right: 0;
+        width: 100px;
+        margin: 0 auto;
+      }
+      .nav-link.last{
+        width: 100px;
+        margin: 0 auto;
       }
     }
+  }
+}
+@media(max-width: 540px){
+  iframe{
+    display: none;
   }
 }

@@ -72,7 +72,8 @@
     }
   }
 .carousel-inner{
-position: relative;
+    position: relative !important;
+
   .d-md-block{
     height: 100%;
   }
@@ -254,8 +255,12 @@ position: relative;
     height: 100%;
     object-fit: cover;
   }
-  .carousel-inner .carousel-item{
+  #carouselExampleIndicators .carousel-inner .carousel-item{
     height: 812px;
+  }
+  #carouselExampleIndicators .carousel-inner{
+    background: linear-gradient(180deg, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
+    mix-blend-mode: multiply;
   }
 }
 
@@ -270,6 +275,9 @@ position: relative;
       right: 0;
       text-align: right;
       background-color: rgba(57, 57, 57, 0.9);
+      a{
+        max-width: 110px;
+      }
     }
     .header__nav--active {
       display: block !important;
@@ -287,6 +295,7 @@ position: relative;
       text-align: left;
       padding: 50px 40px 0 40px;
       background-color: rgba(35, 53, 79, 0.8);
+
     }
     .header__item-link {
       display: block;
