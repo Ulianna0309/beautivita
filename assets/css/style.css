@@ -2125,6 +2125,7 @@ iframe {
   }
   .personal .personal-container {
     margin-left: 123px !important;
+    padding: 40px;
   }
   .personal .personal-container__text.third {
     margin-right: 35px;
@@ -2145,7 +2146,7 @@ iframe {
     margin-bottom: 50px;
   }
   .personal-container__items {
-    margin-left: 60px !important;
+    margin-left: 0 !important;
   }
   .slick-slider {
     padding-right: 0;

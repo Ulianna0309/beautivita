@@ -846,6 +846,7 @@ iframe{
     .personal {
       .personal-container {
         margin-left: 123px !important;
+        padding: 40px;
 
         &__text.third {
           margin-right: 35px;
@@ -874,7 +875,7 @@ iframe{
     margin-bottom: 50px;
   }
   .personal-container__items {
-    margin-left: 60px !important;
+    margin-left: 0 !important;
   }
 
   .slick-slider {
@@ -1138,10 +1139,10 @@ iframe{
     .team-container {
       padding: 35px;
       margin-right: 0 !important;
+
       .slick-slider .slick-slide.slick-current {
         height: 500px;
       }
-
       .slick-slider .slick-track {
         max-height: 500px;
       }
