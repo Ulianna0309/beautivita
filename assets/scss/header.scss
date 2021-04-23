@@ -257,6 +257,8 @@
   }
   #carouselExampleIndicators .carousel-inner .carousel-item{
     height: 812px;
+    background: linear-gradient(180deg, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
+    mix-blend-mode: multiply;
   }
   #carouselExampleIndicators .carousel-inner{
     background: linear-gradient(180deg, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);

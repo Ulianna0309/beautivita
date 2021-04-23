@@ -1146,6 +1146,9 @@ iframe{
       .slick-slider .slick-track {
         max-height: 500px;
       }
+      .slick-slider .slick-slider__item{
+        margin-left: 10px !important;
+      }
 
       .slick-slider .slick-slide.slick-current .card__tooltip p, .team .slick-slider .slick-slide.slick-center .card__tooltip p {
         font-size: 16px;
@@ -1530,12 +1533,15 @@ iframe{
   .team {
     .team-container {
       .slick-slider .slick-slide.slick-center {
-        height: 410px;
+        height: 390px;
       }
       .slick-slider .slick-slide.slick-current .card__tooltip p, .team .slick-slider .slick-slide.slick-center .card__tooltip p {
         font-size: 14px;
         line-height: 16px;
         margin: 10px 0;
+      }
+      .slick-slider .slick-slide.slick-current .card__tooltip p:before, .team .team-container .team .slick-slider .slick-slide.slick-center .card__tooltip p:before {
+        left: 18%;
       }
 
         .slick-slider .slick-slider__item {
@@ -1554,6 +1560,10 @@ iframe{
       .team-container {
         padding: 30px !important;
       }
+      .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .team .slick-slider .slick-slide.slick-center:hover .card__tooltip {
+        top: 7% !important;
+      }
+
 
       .personal-container__items-mobile {
         .carousel-control-next {
@@ -1573,7 +1583,7 @@ iframe{
   }
   .team {
     .team-container .slick-slider .slick-slide.slick-center{
-      height: 300px;
+      height: 280px;
       margin-right: 10px !important;
       margin-left: 10px !important;
     }
@@ -1609,6 +1619,10 @@ iframe{
       font-size: 8px;
       line-height: 12px;
     }
+    .team-container .slick-slider .slick-track {
+      max-height: 320px !important;
+    }
+
   }
 }
 
