@@ -1653,10 +1653,6 @@ iframe {
   padding: 35px;
 }
 
-.section-pink .advantage-container .advantage-left {
-  margin-bottom: 40px;
-}
-
 .personal .personal-container {
   margin-left: 48px;
 }
@@ -2305,6 +2301,9 @@ iframe {
   }
   .advantage-container .collapse {
     display: block;
+  }
+  .advantage-container .advantage-right {
+    margin-top: 20px;
   }
   .advantage-container .advantage-left .btn-primary {
     background-color: transparent;

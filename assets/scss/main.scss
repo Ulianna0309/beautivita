@@ -907,9 +907,6 @@ iframe{
       position: relative;
       padding: 35px;
 
-      .advantage-left {
-        margin-bottom: 40px;
-      }
     }
   }
   .personal {
@@ -953,6 +950,9 @@ iframe{
     padding: 35px !important;
     .collapse {
       display: block;
+    }
+    .advantage-right{
+      margin-top: 20px;
     }
 
     .advantage-left {
