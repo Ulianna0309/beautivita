@@ -793,6 +793,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: -110px !important;
 }
 
 .section-pink .advantage-container .card {
@@ -1972,10 +1973,6 @@ iframe {
     margin-left: 200px;
     margin-right: 30px;
   }
-  .section-pink .advantage-container {
-    padding: 50px 0 60px;
-    margin-top: -50px;
-  }
   .advantage-title img {
     width: 250px;
   }
@@ -2107,8 +2104,8 @@ iframe {
     mix-blend-mode: multiply;
   }
   .section-pink .advantage-container {
-    margin-right: 0 !important;
-    padding: 35px !important;
+    padding: 50px 0 60px !important;
+    margin-top: 0 !important;
   }
   .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left, .portfolio-container__left, .team-container__left {
     margin-left: 100px;
@@ -2295,17 +2292,18 @@ iframe {
   .feature-container {
     padding: 35px;
   }
-  .advantage-container {
+  .section-pink .advantage-container {
     display: block !important;
     padding: 35px !important;
+    margin-right: 0 !important;
   }
-  .advantage-container .collapse {
+  .section-pink .advantage-container .collapse {
     display: block;
   }
-  .advantage-container .advantage-right {
+  .section-pink .advantage-container .advantage-right {
     margin-top: 20px;
   }
-  .advantage-container .advantage-left .btn-primary {
+  .section-pink .advantage-left .btn-primary {
     background-color: transparent;
     border: none;
     color: #F55449 !important;
@@ -2315,22 +2313,22 @@ iframe {
     font-size: 26px;
     line-height: 38px;
   }
-  .advantage-container .advantage-left .btn-primary:focus {
+  .section-pink .advantage-left .btn-primary:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .advantage-container .advantage-left .btn-primary:active {
+  .section-pink .advantage-left .btn-primary:active {
     background-color: transparent !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
-  .advantage-container .advantage-left .btn-primary .btn-danger {
+  .section-pink .advantage-left .btn-primary .btn-danger {
     width: 300px;
   }
-  .advantage-container .advantage-left .advantage-left__text {
+  .section-pink .advantage-left .advantage-left__text {
     max-width: 100% !important;
   }
-  .advantage-container .advantage-left .card-body {
+  .section-pink .advantage-left .card-body {
     background-color: transparent;
     border: 0;
   }

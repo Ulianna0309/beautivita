@@ -88,7 +88,6 @@ $('.slick-slider').slick({
     autoplaySpeed: 10000,
     prevArrow: $('.slider__prev'),
     nextArrow: $('.slider__next')
-    //adaptiveHeight: true,
 });
 
 $(document).ready(function () {
