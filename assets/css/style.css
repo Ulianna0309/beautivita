@@ -1637,10 +1637,17 @@ iframe {
 }
 
 .slider__arrow .slider__prev {
-  margin-right: 50px;
+  margin-right: 25px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.slider__arrow .slider__next {
+  margin-left: 25px;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .section-pink {
