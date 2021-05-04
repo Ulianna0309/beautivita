@@ -599,7 +599,6 @@ template {
   -o-transition: 0.3s;
   transition: 0.3s;
   border-bottom: 3px solid transparent;
-  font-family: 'Mont-semiBold';
 }
 
 .header .header__nav a:hover {
