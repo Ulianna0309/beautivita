@@ -493,12 +493,13 @@ iframe{
     .slick-slider__item {
       height: 450px;
       max-width: 100%;
-      width: 322px !important;
+      width: 400px !important;
       margin-left: 68px !important;
       position: relative;
       display: inline-block;
       transition: all 0.3s ease-in-out;
       cursor: default;
+
 
       .slider-text {
         position: absolute;
@@ -532,15 +533,15 @@ iframe{
       transition: all 0.3s ease;
       text-align: center;
 
-
       & img {
         width: 100%;
         height: auto;
       }
       &.slick-current,
       &.slick-center {
-        height: 662px;
-        width: 450px !important;
+        height: 630px;
+        width: 400px !important;
+
 
         &:hover {
           transform: translateX(6px);
@@ -1165,7 +1166,7 @@ iframe{
         max-height: 500px;
       }
       .slick-slider .slick-slider__item{
-        margin-left: 10px !important;
+        margin-left: 40px !important;
       }
 
       .slick-slider .slick-slide.slick-current .card__tooltip p, .team .slick-slider .slick-slide.slick-center .card__tooltip p {
@@ -1553,8 +1554,9 @@ iframe{
 
         .slick-slider .slick-slider__item {
           height: 320px;
-          margin-left: 0 !important;
-          margin-right: 0 !important;
+          margin-left: 10px !important;
+          margin-right: 10px !important;
+          width: 320px !important;
         }
       .slick-slider .slick-track {
         max-height: 400px;
@@ -1596,6 +1598,7 @@ iframe{
     }
     .team-container .slick-slider .slick-slider__item {
       height: 200px;
+      width: 240px !important;
     }
     .team-container .slick-slider .slick-slide.slick-current .card__tooltip p:before, .team .team-container .team .slick-slider .slick-slide.slick-center .card__tooltip p:before {
       position: absolute;

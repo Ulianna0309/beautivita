@@ -68,7 +68,7 @@ $('.slick-slider').slick({
             breakpoint: 1200, // - от какой ширины изменять настройки(1024 и ниже)
             settings: {
                 // вносим изменения на ширине 1024 и ниже
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         },
@@ -80,12 +80,11 @@ $('.slick-slider').slick({
             }
         }
     ],
-    slidesToShow: 3,
+    slidesToShow: 3 ,
     slidesToScroll: 3,
     dots: true,
     arrows: true,
     swipe: true,
-    //ginfinite: true,
     swipeToSlide: true,
     autoplay: true,
     autoplaySpeed: 10000,
