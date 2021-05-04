@@ -144,7 +144,6 @@
   &__number {
     font-weight: 900;
     font-size: 48px;
-    line-height: 29px;
     color: #F55449;
     position: relative;
     padding: 0 10px;
@@ -683,10 +682,12 @@ iframe{
   .slider__prev {
     margin-right: 25px;
     transform: rotate(180deg);
+    cursor: pointer;
   }
   .slider__next{
     margin-left: 25px;
     transform: rotate(0deg);
+    cursor: pointer;
   }
 }
 
@@ -914,16 +915,7 @@ iframe{
       margin-left: 48px;
     }
   }
-  .portfolio {
-    .portfolio-container {
-      grid-template-areas:
-       "b1 b2 b3 b4"
-       "b5 b6 b7 b8"
-       "b9 b9 b10 b10";
-      grid-template-columns: repeat(4, 1fr);
-      margin-left: 48px !important;
-    }
-  }
+
   .creative-container {
     padding-bottom: 60px;
 
@@ -938,6 +930,20 @@ iframe{
 
 
 @media (max-width:992px) {
+  /*.portfolio {
+    .portfolio-container {
+      grid-template-areas:
+       "b1 b2 b3 b4"
+       "b5 b6 b7 b8"
+       "b9 b9 b10 b10";
+      grid-template-columns: repeat(4, 1fr);
+      margin-left: 48px !important;
+    }
+  }*/
+  .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile {
+    background: transparent;
+    outline: none;
+  }
   .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left {
     margin-left: 0;
     margin-right: 0;
@@ -1022,7 +1028,6 @@ iframe{
   }
 
     .team {
-
       &.slick-current,
       &.slick-center {
         width: 500px !important;
@@ -1132,14 +1137,22 @@ iframe{
     padding: 35px 0 35px 35px;
   }
   .portfolio .portfolio-container {
+    display: grid;
     grid-template-areas:
-        "b1 b2 b3"
-        "b4 b5 b6"
-        "b7 b8 b9";
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 48px !important;
-    padding: 0 50px;
+        "b1 b2"
+        "b3 b4";
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0 !important;
+    margin-bottom: 0;
+    padding: 0 40px 40px 40px !important;
   }
+  .portfolio-icon:nth-last-child(-n+6) {
+    display: none;
+  }
+  .portfolio-btn{
+    margin: 20px;
+  }
+
   .team {
     .team-container {
       padding: 35px;
@@ -1312,18 +1325,7 @@ iframe{
     width: 42px;
     z-index: 5;
   }
-  .portfolio .portfolio-container {
-    display: grid;
-    grid-template-areas:
-        "b1 b2"
-        "b3 b4";
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 0 !important;
-    margin-bottom: 0;
-  }
-  .portfolio-icon:nth-last-child(-n+6) {
-    display: none;
-  }
+
   .feature-container {
     .feature-container__list {
       display: block !important;

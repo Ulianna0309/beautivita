@@ -59,6 +59,9 @@ $(document).ready(function() {
     });
 });
 $('.slick-slider').slick({
+    variableWidth: true,
+    infinite: true,
+    focusOnSelect: true,
     centerMode: true,
     responsive: [
         {
@@ -82,7 +85,7 @@ $('.slick-slider').slick({
     dots: true,
     arrows: true,
     swipe: true,
-    //infinite: true,
+    //ginfinite: true,
     swipeToSlide: true,
     autoplay: true,
     autoplaySpeed: 10000,
@@ -109,7 +112,12 @@ $(document).ready(function () {
 }());
 
 
-
+$('div1').mouseover(function(){
+    $(this).addClass(' slick-slide slick-current');
+});
+$('div').mouseleave(function(){
+    $(this).removeClass('hover');
+});
 
 
 

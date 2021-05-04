@@ -1,4 +1,44 @@
 @font-face {
+  font-family: 'Mont-Regular';
+  src: url('../../assets/font-mont/Mont-Regular.ttf');
+  src: local('../../Mont-Regular'), local('Mont-Regular'),
+  url('../../assets/font-mont/Mont-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mont-Light';
+  src: url('../../assets/font-mont/Mont-Light.ttf');
+  src: local('../../Mont-Light'), local('Mont-Light'),
+  url('../../assets/font-mont/Mont-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mont-semiBold';
+  src: url('../../assets/font-mont/Mont-semiBold.ttf');
+  src: local('../../Mont-semiBold'), local('Mont-semiBold'),
+  url('../../assets/font-mont/Mont-semiBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bodoni Regular';
+  src: url('../../assets/font-mont/Bodoni Regular.ttf');
+  src: local('../../Bodoni Regular'), local('Bodoni Regular'),
+  url('../../assets/font-mont/Bodoni Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bodoni bold cyrillic';
+  src: url('../../assets/font-mont/Bodoni bold cyrillic.ttf');
+  src: local('../../Bodoni bold cyrillic'), local('Bodoni bold cyrillic'),
+  url('../../assets/font-mont/Bodoni bold cyrillic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
   font-family: 'Mont Book';
   src: url('../../assets/font-mont/Mont-Book.eot');
   src: local('../../Mont Book'), local('Mont-Book'),

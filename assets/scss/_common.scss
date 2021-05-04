@@ -7,7 +7,7 @@ html {
   overflow-x: hidden;
 }
 body{
-  font-family: "Mont", sans-serif !important;
+  font-family: "Mont-Regular", sans-serif !important;
   font-size: 1em;
 }
 h1{
@@ -53,11 +53,20 @@ li{
   content: "";
   background-color: #666666;
 }
-/*.carousel-control-next-icon {
-  background-image: none !important;
-  content: ">";
-  color: red;
-}*/
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select:hover, select:focus{
+  border: 1px solid transparent;
+}
+option{
+  background: #F55449;
+  font-size: 18px;
+}
+
+
 
   @media (max-width: 1800px) {
   h2 {

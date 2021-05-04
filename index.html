@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head itemscope itemtype="http://schema.org/WPHeader">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -38,7 +38,7 @@
       </div>
       <div class="header__nav-block">
       <nav class="header__nav">
-        <ul itemscope itemtype="http://schema.org/SiteNavigationElement" class="header__list">
+        <ul class="header__list">
           <li class="header__item">
             <a href="#salon" class="header__item-link js-scroll"
             >SALON</a
@@ -62,7 +62,10 @@
         </ul>
       </nav>
       <div class="btn-nav">
-        <a href="" class="btn header-btn">EN</a>
+        <select class="btn header-btn" id="select">
+          <option>EN</option>
+          <option>RU</option>
+        </select>
         <a href="" class="btn header-btn">Join us</a>
       </div>
         <div class="header-navigation__btn">
@@ -85,42 +88,26 @@
    <div class="carousel-inner">
      <div class="carousel-item active">
        <img class="d-block w-100" src="assets/img/header-slider.svg" alt="Первый слайд">
-       <div class="carousel-caption d-md-block slider-btn">
-         <div class="btn-nav__mobile">
-           <a href="" class="header-btn__mobile">EN</a>
-           <a href="" class="header-btn__mobile">Join us</a>
-         </div>
-         <h1>Our Hair <br> styles enhances <br> your style</h1>
-         <a href="#" class="header-btn__down"><img src="assets/img/App-btn.svg" alt="apple-store"></a>
-         <a href="#" class="header-btn__down"><img src="assets/img/Google-btn.svg" alt="google-store"></a>
-         <img src="assets/img/slider-img.svg" class="slider-img" alt="slier-img">
-       </div>
+       <link rel="prerender" href="assets/img/header-slider.svg">
+     </div>
+     <div class="carousel-caption d-md-block slider-btn">
+        <div class="btn-nav__mobile">
+          <select class="header-btn__mobile">
+            <option>EN</option>
+            <option>RU</option>
+          </select>
+          <a href="" class="header-btn__mobile">Join us</a>
+        </div>
+        <h1>Our Hair <br> styles enhances <br> your style</h1>
+        <a href="#" class="header-btn__down"><img src="assets/img/App-btn.svg" alt="apple-store"></a>
+        <a href="#" class="header-btn__down"><img src="assets/img/Google-btn.svg" alt="google-store"></a>
+        <img src="assets/img/slider-img.svg" class="slider-img" alt="slier-img">
+      </div>
+     <div class="carousel-item">
+       <img class="d-block w-100" src="assets/img/header-slider.svg" alt="Второй слайд">
      </div>
      <div class="carousel-item">
-       <img class="d-block w-100 hidden-img" src="assets/img/header-slider.svg" alt="Второй слайд">
-       <div class="carousel-caption d-md-block slider-btn">
-         <div class="btn-nav__mobile">
-           <a href="" class="header-btn__mobile">EN</a>
-           <a href="" class="header-btn__mobile">Join us</a>
-         </div>
-         <h1>Our Hair <br> styles enhances <br> your style</h1>
-         <a href="#" class="header-btn__down"><img src="assets/img/App-btn.svg" alt="apple-store"></a>
-         <a href="#" class="header-btn__down"><img src="assets/img/Google-btn.svg" alt="google-store"></a>
-         <img src="assets/img/slider-img.svg" class="slider-img" alt="slier-img">
-       </div>
-     </div>
-     <div class="carousel-item">
-       <img class="d-block w-100 hidden-img" src="assets/img/header-slider.svg" alt="Третий слайд">
-       <div class="carousel-caption d-md-block slider-btn">
-         <div class="btn-nav__mobile">
-           <a href="" class="header-btn__mobile">EN</a>
-           <a href="" class="header-btn__mobile">Join us</a>
-         </div>
-         <h1>Our Hair <br> styles enhances <br> your style</h1>
-         <a href="#" class="header-btn__down"><img src="assets/img/App-btn.svg" alt="apple-store"></a>
-         <a href="#" class="header-btn__down"><img src="assets/img/Google-btn.svg" alt="google-store"></a>
-         <img src="assets/img/slider-img.svg" class="slider-img" alt="slier-img">
-       </div>
+       <img class="d-block w-100" src="assets/img/header-slider.svg" alt="Третий слайд">
      </div>
    </div>
  </section>
@@ -237,7 +224,7 @@
          <h2 class="title-repeat creative-title">Our creative your beauty</h2>
      </div>
       <div class="creative-container__bottom d-flex justify-content-center">
-        <div itemscope itemtype="http://schema.org/Product" class="card">
+        <div class="card">
           <div class="card__overlay"></div>
           <h4 itemprop="name" class="card__title">Hair Styling</h4>
           <img src="assets/img/creative1.svg" class="card-img-top" alt="hair">
@@ -253,7 +240,7 @@
               </ul>
             </div>
         </div>
-        <div itemscope itemtype="http://schema.org/Product" class="card">
+        <div class="card">
           <div class="card__overlay"></div>
           <h4 itemprop="name" class="card__title">Face & Skin</h4>
           <img src="assets/img/creative2.svg" class="card-img-top" alt="skin">
@@ -269,7 +256,7 @@
             </ul>
           </div>
         </div>
-        <div itemscope itemtype="http://schema.org/Product" class="card">
+        <div class="card">
           <div class="card__overlay"></div>
           <h4 itemprop="name" class="card__title">Nails</h4>
           <img src="assets/img/creative3.svg" class="card-img-top" alt="nails">
@@ -289,7 +276,7 @@
       <div id="creative-container__slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item text-center active">
-            <div itemscope itemtype="http://schema.org/Product" class="card">
+            <div class="card">
               <div class="card__overlay"></div>
               <h4 itemprop="name" class="card__title">Hair Styling</h4>
               <img src="assets/img/creative1.svg" class="card-img-top" alt="hair">
@@ -307,7 +294,7 @@
             </div>
           </div>
           <div class="carousel-item text-center">
-            <div itemscope itemtype="http://schema.org/Product" class="card">
+            <div class="card">
               <div class="card__overlay"></div>
               <h4 itemprop="name" class="card__title">Face & Skin</h4>
               <img src="assets/img/creative2.svg" class="card-img-top" alt="skin">
@@ -325,7 +312,7 @@
             </div>
           </div>
           <div class="carousel-item text-center">
-            <div itemscope itemtype="http://schema.org/Product" class="card">
+            <div class="card">
               <div class="card__overlay"></div>
               <h4 itemprop="name" class="card__title">Nails</h4>
               <img src="assets/img/creative3.svg" class="card-img-top" alt="nails">
@@ -376,7 +363,7 @@
       <img src="assets/img/p10.svg" class="portfolio-icon" alt="portfolio10">
     </div>
     <div class="portfolio-btn text-center d-flex justify-content-center">
-      <a href="#" class="btn btn-danger d-flex align-items-center">See more on Instagram <img src="assets/img/inst.svg" alt="instagram" class="btn-danger__icon"></a>
+      <a href="#" class="btn btn-danger d-flex justify-content-center align-items-center">See more on Instagram <img src="assets/img/inst.svg" alt="instagram" class="btn-danger__icon"></a>
     </div>
   </section>
   <section class="section-pink team">
@@ -471,7 +458,7 @@
         <div class="personal-container__item d-flex justify-content-between align-items-center">
           <div class="personal-container__number">1</div>
           <div class="personal-container__line"></div>
-          <div class="personal-container__number">2</div>
+          <div class="btn-nav__mobile">2</div>
           <div class="personal-container__line"></div>
           <div class="personal-container__number line">3</div>
           <div class="personal-container__line"></div>
