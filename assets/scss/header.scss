@@ -329,13 +329,13 @@
       .header-btn__mobile {
         border: 2px solid #F55449;
         font-size: 18px;
-        line-height: 24px;
         text-align: right;
         color: #FFFFFF;
         padding: 15px 40px;
         text-transform: uppercase;
         font-weight: 600;
         transition: 0.3s;
+
 
         &:hover {
           background-color: #F55449;
@@ -351,6 +351,10 @@
 @media(max-width: 540px){
   .carousel-caption h1 {
     padding-top: 50px !important;
+  }
+  .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile{
+    font-size: 14px;
+    max-height: 54px;
   }
 }
 
