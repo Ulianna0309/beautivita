@@ -11,9 +11,6 @@ html {
 body {
   font-family: "Mont-Regular", sans-serif !important;
   font-size: 1em;
-  overflow-x: hidden;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
 }
 
 h1 {
