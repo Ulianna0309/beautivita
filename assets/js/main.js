@@ -111,12 +111,6 @@ $(document).ready(function () {
 }());
 
 
-$('div1').mouseover(function(){
-    $(this).addClass(' slick-slide slick-current');
-});
-$('div').mouseleave(function(){
-    $(this).removeClass('hover');
-});
 
 
 
