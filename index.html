@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head itemscope itemtype="http://schema.org/WPHeader">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,9 +20,9 @@
   <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/libs/slick-carousel/slick/slick-theme.css">
   <link rel="stylesheet" href="assets/libs/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
 <header class="header js-scroll" id="home">
@@ -38,7 +38,7 @@
       </div>
       <div class="header__nav-block">
       <nav class="header__nav">
-        <ul class="header__list">
+        <ul itemscope itemtype="http://schema.org/SiteNavigationElement" class="header__list">
           <li class="header__item">
             <a href="#salon" class="header__item-link js-scroll"
             >SALON</a
@@ -87,7 +87,8 @@
    </ol>
    <div class="carousel-inner">
      <div class="carousel-item active">
-       <img class="d-block w-100 " src="assets/img/header-slider.png" alt="Первый слайд">
+       <img class="d-block w-100 " src="assets/img/header-slider.svg" alt="Первый слайд">
+       <link rel="prerender" href="assets/img/header-slider.svg">
      </div>
      <div class="carousel-caption d-md-block slider-btn">
         <div class="btn-nav__mobile">
@@ -100,13 +101,13 @@
         <h1>Our Hair <br> styles enhances <br> your style</h1>
         <a href="#" class="header-btn__down"><img src="assets/img/App-btn.svg" alt="apple-store"></a>
         <a href="#" class="header-btn__down"><img src="assets/img/Google-btn.svg" alt="google-store"></a>
-        <img src="assets/img/phone.png" class="slider-img" alt="slier-img">
+        <img src="assets/img/slider-img.svg" class="slider-img" alt="slier-img">
       </div>
      <div class="carousel-item">
-       <img class="d-block w-100" src="assets/img/header-slider.png" alt="Второй слайд">
+       <img class="d-block w-100" src="assets/img/header-slider.svg" alt="Второй слайд">
      </div>
      <div class="carousel-item">
-       <img class="d-block w-100" src="assets/img/header-slider.png" alt="Третий слайд">
+       <img class="d-block w-100" src="assets/img/header-slider.svg" alt="Третий слайд">
      </div>
    </div>
  </section>
@@ -133,6 +134,7 @@
     <div class="advantage-right">
       <div class="advantage__overlay"></div>
       <img src="assets/img/video.svg" alt="video">
+    <!--  <video src="" poster="assets/img/video.svg" controls></video>-->
       <a class="advantage-right__btn-play"><img src="assets/img/play.svg" alt="play"></a>
     </div>
   </div>
@@ -222,7 +224,7 @@
          <h2 class="title-repeat creative-title">Our creative your beauty</h2>
      </div>
       <div class="creative-container__bottom d-flex justify-content-center">
-        <div class="card">
+        <div itemscope itemtype="http://schema.org/Product" class="card">
           <div class="card__overlay"></div>
           <h4 itemprop="name" class="card__title">Hair Styling</h4>
           <img src="assets/img/creative1.svg" class="card-img-top" alt="hair">
@@ -238,7 +240,7 @@
               </ul>
             </div>
         </div>
-        <div class="card">
+        <div itemscope itemtype="http://schema.org/Product" class="card">
           <div class="card__overlay"></div>
           <h4 itemprop="name" class="card__title">Face & Skin</h4>
           <img src="assets/img/creative2.svg" class="card-img-top" alt="skin">
@@ -254,7 +256,7 @@
             </ul>
           </div>
         </div>
-        <div class="card">
+        <div itemscope itemtype="http://schema.org/Product" class="card">
           <div class="card__overlay"></div>
           <h4 itemprop="name" class="card__title">Nails</h4>
           <img src="assets/img/creative3.svg" class="card-img-top" alt="nails">
@@ -274,7 +276,7 @@
       <div id="creative-container__slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item text-center active">
-            <div class="card">
+            <div itemscope itemtype="http://schema.org/Product" class="card">
               <div class="card__overlay"></div>
               <h4 itemprop="name" class="card__title">Hair Styling</h4>
               <img src="assets/img/creative1.svg" class="card-img-top" alt="hair">
@@ -292,7 +294,7 @@
             </div>
           </div>
           <div class="carousel-item text-center">
-            <div class="card">
+            <div itemscope itemtype="http://schema.org/Product" class="card">
               <div class="card__overlay"></div>
               <h4 itemprop="name" class="card__title">Face & Skin</h4>
               <img src="assets/img/creative2.svg" class="card-img-top" alt="skin">
@@ -310,7 +312,7 @@
             </div>
           </div>
           <div class="carousel-item text-center">
-            <div class="card">
+            <div itemscope itemtype="http://schema.org/Product" class="card">
               <div class="card__overlay"></div>
               <h4 itemprop="name" class="card__title">Nails</h4>
               <img src="assets/img/creative3.svg" class="card-img-top" alt="nails">
@@ -456,7 +458,7 @@
         <div class="personal-container__item d-flex justify-content-between align-items-center">
           <div class="personal-container__number">1</div>
           <div class="personal-container__line"></div>
-          <div class="personal-container__number">2</div>
+          <div class="btn-nav__mobile">2</div>
           <div class="personal-container__line"></div>
           <div class="personal-container__number line">3</div>
           <div class="personal-container__line"></div>
@@ -522,13 +524,13 @@
     <div class="touch-left">
       <form class="touch-form">
         <div class="form-group">
-          <input type="text" class="form-control touch-input" placeholder="Name">
+          <input type="text" class="form-control touch-input" id="exampleInputEmail2" placeholder="Name">
         </div>
         <div class="form-group">
-          <input type="email" class="form-control touch-input" placeholder="Email Address">
+          <input type="email" class="form-control touch-input" id="exampleInputEmail1" placeholder="Email Address">
         </div>
         <div class="form-group">
-          <textarea class="form-control" rows="6" placeholder="Your Message"></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Your Message"></textarea>
         </div>
         <input type="hidden" name="project_name" value="Site Name">
         <input type="hidden" name="admin_email" value="ulianna@mail.com">
@@ -540,12 +542,12 @@
         <div class="touch-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15858.940818758687!2d3.413189621557945!3d6.428055226763499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sInfomation%20technologies%20building%2C%20Victoria%20Island%2C%20Lagos%2C%20Nigeria.!5e0!3m2!1sru!2sua!4v1618088683548!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="touch-map__text-block d-flex align-items-center">
+        <div itemscope itemtype="http://schema.org/Organization" class="touch-map__text-block d-flex align-items-center">
           <img src="assets/img/map.svg" alt="map-icon" class="touch-map__text-icon">
           <p itemprop="address" class="touch-map__text">Infomation technologies building,
             Victoria Island, Lagos, Nigeria.</p>
         </div>
-        <div class="touch-map__contact d-flex justify-content-between">
+        <div itemscope itemtype="http://schema.org/Organization" class="touch-map__contact d-flex justify-content-between">
           <a itemprop="telephone" href="tel: +234 081-1236-4568"><img src="assets/img/phone.svg" class="touch-map__contact-icon" alt="phone">+234 081-1236-4568</a>
           <a itemprop="email" href="mailto: hello@info.com.ng"><img src="assets/img/email.svg" class="touch-map__contact-icon" alt="phone">hello@info.com.ng</a>
         </div>
@@ -561,7 +563,7 @@
 </main>
 <footer class="footer"  id="contact">
   <div class="footer-container">
-    <div class="footer-container__left">
+    <div itemscope itemtype="http://schema.org/Organization" class="footer-container__left">
       <a href="#home" class="d-block js-scroll"><img src="assets/img/logo.svg" alt="logo"></a>
       <a itemprop="telephone" href="tel: (310) 798 2672" class="d-block">(310) 798 2672</a>
       <a itemprop="email" href="mailto: Info@classicsalone.com" class="d-block">Info@classicsalone.com</a>
