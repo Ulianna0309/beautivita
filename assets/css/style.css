@@ -79,6 +79,10 @@ option {
   font-size: 18px;
 }
 
+.collapse:not(.show) {
+  display: none !important;
+}
+
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */

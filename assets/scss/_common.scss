@@ -65,6 +65,9 @@ option{
   background: #F55449;
   font-size: 18px;
 }
+.collapse:not(.show) {
+  display: none !important;
+}
 
 
 
