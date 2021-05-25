@@ -12,16 +12,18 @@ body{
 }
 h1{
   font-weight: 500;
-  font-size: 5.625em !important;
-  line-height: 6.25em;
+  font-size: 6.875em !important;
+  line-height: 7.5em;
   text-align: center;
   color: #FFFFFF;
+  font-family: Bodoni;
 }
 h2{
   font-size: 4em !important;
   font-weight: 500;
   line-height: 5.1875em;
   color: #FFFFFF;
+  font-family: Bodoni;
 }
 h3 {
   color: #637588;
@@ -39,10 +41,11 @@ li{
 .title-repeat{
   position: relative;
   font-weight: 500;
-  font-size: 64px;
-  line-height: 80px;
+  font-size: 64px !important;
+  line-height: 83px;
   color: #FFFFFF;
   letter-spacing: 0.67165px;
+  font-family: Bodoni;
 }
 .title-repeat:before{
   position: absolute;
@@ -67,6 +70,9 @@ option{
 }
 .collapse:not(.show) {
   display: none !important;
+}
+.carousel-item{
+  background: #d7d7d7;
 }
 
 

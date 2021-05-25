@@ -73,26 +73,28 @@
   }
 .carousel-inner{
     position: relative !important;
+  background: linear-gradient(180deg, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
 
   .d-md-block{
     height: 100%;
   }
   .slider-img{
     position: absolute;
-    top: 10em;
+    top: 157px;
     right: -13.125em;
-    height: 87%;
-
+    height: auto;
   }
   .carousel-item{
     position: relative;
+    background: linear-gradient(180deg, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
+    mix-blend-mode: multiply;
   }
   .slider-img__bg{
     display: none;
   }
 }
 .carousel .carousel-indicators{
-  bottom: 10em;
+  bottom: 13em;
    & li{
      border-radius: 10px;
      width: 10px;
@@ -108,10 +110,9 @@
 }
 .carousel-caption h1 {
   margin: 0 auto;
-  padding-top: 233px;
-  padding-bottom: 238px;
+  padding-top: 280px;
+  padding-bottom: 58px;
   font-weight: 600;
-  font-size: 5.625em !important;
   text-align: center;
   color: #FFFFFF;
 }
@@ -222,6 +223,13 @@
       font-size: 4.375em !important;
       padding-bottom: 100px;
     }
+    .carousel-inner .slider-img{
+      height: 80%;
+    }
+    .title-repeat img{
+      margin-left: 0;
+      margin-top: 0;
+    }
   }
 @media (max-width: 1500px) {
   .carousel-inner .slider-img{
@@ -243,7 +251,6 @@
   }
   .carousel-caption h1 {
     font-size: 3em !important;
-    padding-top: 300px;
   }
   .carousel .carousel-indicators {
     bottom: 110px;
@@ -262,7 +269,6 @@
   }
   #carouselExampleIndicators .carousel-inner{
     background: linear-gradient(180deg, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
-    mix-blend-mode: multiply;
   }
 }
 
@@ -354,7 +360,9 @@
   }
   .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile{
     font-size: 14px;
-    max-height: 54px;
+  }
+  select{
+    height: 54px;
   }
 }
 

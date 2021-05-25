@@ -15,10 +15,11 @@ body {
 
 h1 {
   font-weight: 500;
-  font-size: 5.625em !important;
-  line-height: 6.25em;
+  font-size: 6.875em !important;
+  line-height: 7.5em;
   text-align: center;
   color: #FFFFFF;
+  font-family: Bodoni;
 }
 
 h2 {
@@ -26,6 +27,7 @@ h2 {
   font-weight: 500;
   line-height: 5.1875em;
   color: #FFFFFF;
+  font-family: Bodoni;
 }
 
 h3 {
@@ -48,10 +50,11 @@ li {
 .title-repeat {
   position: relative;
   font-weight: 500;
-  font-size: 64px;
-  line-height: 80px;
+  font-size: 64px !important;
+  line-height: 83px;
   color: #FFFFFF;
   letter-spacing: 0.67165px;
+  font-family: Bodoni;
 }
 
 .title-repeat:before {
@@ -81,6 +84,10 @@ option {
 
 .collapse:not(.show) {
   display: none !important;
+}
+
+.carousel-item {
+  background: #d7d7d7;
 }
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
@@ -641,6 +648,9 @@ template {
 
 .carousel-inner {
   position: relative !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#506587), color-stop(48.44%, rgba(124, 124, 124, 0)), to(#506587));
+  background: -o-linear-gradient(top, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
+  background: linear-gradient(180deg, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
 }
 
 .carousel-inner .d-md-block {
@@ -649,13 +659,17 @@ template {
 
 .carousel-inner .slider-img {
   position: absolute;
-  top: 10em;
+  top: 157px;
   right: -13.125em;
-  height: 87%;
+  height: auto;
 }
 
 .carousel-inner .carousel-item {
   position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#506587), color-stop(48.44%, rgba(124, 124, 124, 0)), to(#506587));
+  background: -o-linear-gradient(top, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
+  background: linear-gradient(180deg, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
+  mix-blend-mode: multiply;
 }
 
 .carousel-inner .slider-img__bg {
@@ -663,7 +677,7 @@ template {
 }
 
 .carousel .carousel-indicators {
-  bottom: 10em;
+  bottom: 13em;
 }
 
 .carousel .carousel-indicators li {
@@ -682,10 +696,9 @@ template {
 
 .carousel-caption h1 {
   margin: 0 auto;
-  padding-top: 233px;
-  padding-bottom: 238px;
+  padding-top: 280px;
+  padding-bottom: 58px;
   font-weight: 600;
-  font-size: 5.625em !important;
   text-align: center;
   color: #FFFFFF;
 }
@@ -800,13 +813,15 @@ template {
 
 .section-pink .advantage-container {
   background: #072652;
-  padding: 110px 0 63px !important;
+  padding: 78px 0 63px !important;
   margin-right: 100px !important;
-  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -110px !important;
+  margin-top: -120px !important;
+  position: absolute !important;
+  height: 774px;
+  z-index: 0;
 }
 
 .section-pink .advantage-container .card {
@@ -833,7 +848,6 @@ template {
 
 .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left, .portfolio-container__left, .team-container__left {
   margin-left: 325px;
-  margin-right: 50px;
 }
 
 .advantage-left__text, .feature-container__left__text, .feature-container__list__text, .creative-container__left__text, .portfolio-container__left__text, .team-container__left__text {
@@ -845,7 +859,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 60px;
+  margin-left: auto;
 }
 
 .advantage-left .btn-danger, .feature-container__left .btn-danger, .feature-container__list .btn-danger, .creative-container__left .btn-danger, .portfolio-container__left .btn-danger, .team-container__left .btn-danger {
@@ -864,10 +878,13 @@ template {
 
 .advantage-title {
   max-width: 585px;
+  font-size: 88px !important;
 }
 
 .title-repeat img {
-  width: 408px;
+  width: 349px;
+  margin-top: 20px;
+  margin-left: 100px;
 }
 
 .advantage-text {
@@ -876,7 +893,7 @@ template {
   line-height: 39px;
   letter-spacing: 0.67165px;
   color: #888888;
-  margin: 28px 0 42px 0;
+  margin: 28px 0 0 0;
 }
 
 .advantage-right {
@@ -884,6 +901,9 @@ template {
   padding-right: 20px;
   position: relative;
   height: 100%;
+  margin-top: 42px;
+  max-height: 582px;
+  margin-left: 50px;
 }
 
 .advantage-right__btn-play {
@@ -938,7 +958,7 @@ template {
 .personal-container {
   background: #072652;
   margin-left: 323px !important;
-  padding: 40px 158px 89px 82px;
+  padding: 40px 158px 44px 82px;
 }
 
 .personal-container .personal-container__items-mobile {
@@ -946,7 +966,7 @@ template {
 }
 
 .personal-container__items {
-  margin-top: 45px;
+  margin-top: 25px;
 }
 
 .personal-container__text {
@@ -995,7 +1015,11 @@ template {
 }
 
 .creative-container {
-  padding: 62px 0 148px 0;
+  padding: 62px 100px 148px 0;
+}
+
+.creative-container .creative-container__bottom {
+  margin-top: 114px;
 }
 
 .creative-container .carousel {
@@ -1234,7 +1258,7 @@ template {
 .portfolio .portfolio-container {
   background-color: #072652;
   margin-left: 328px;
-  padding: 0 180px 0 94px;
+  padding: 0 180px 20px 94px;
   display: grid;
   grid-template-areas: "b1 b2 b3 b4 b5" "b6 b7 b8 b9 b10";
   grid-template-columns: repeat(5, 1fr);
@@ -1408,6 +1432,10 @@ iframe {
 
 .touch-right {
   width: 482px;
+}
+
+.team .title__team {
+  font-family: Bodoni;
 }
 
 .team .slick-slider {
@@ -1664,8 +1692,8 @@ iframe {
   cursor: pointer;
 }
 
-.section-pink {
-  height: auto;
+.section-pink__all {
+  height: 654px;
 }
 
 .section-pink .advantage-container {
@@ -1677,10 +1705,6 @@ iframe {
 
 .personal .personal-container {
   margin-left: 48px;
-}
-
-.creative-container {
-  padding-bottom: 60px;
 }
 
 .creative-container .card .card__tooltip {
@@ -1699,13 +1723,17 @@ iframe {
 .footer .footer-container {
   margin-left: 168px;
   padding: 33px 0 53px 0;
+  margin-right: 214px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.footer .footer-container__left {
-  margin-right: 308px;
+.footer .footer-container__center a {
+  margin-top: 30px;
 }
 
 .footer .footer-container__left img {
@@ -2000,8 +2028,21 @@ iframe {
     font-size: 4.375em !important;
     padding-bottom: 100px;
   }
+  .carousel-inner .slider-img {
+    height: 80%;
+  }
+  .title-repeat img {
+    margin-left: 0;
+    margin-top: 0;
+  }
   .personal .personal-container {
     margin-left: 200px !important;
+  }
+  .carousel .carousel-indicators {
+    bottom: 9em;
+  }
+  .advantage-title {
+    max-width: 522px;
   }
   .advantage-title img {
     width: auto;
@@ -2026,7 +2067,6 @@ iframe {
   }
   .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left, .portfolio-container__left, .team-container__left {
     margin-left: 200px;
-    margin-right: 30px;
   }
   .advantage-title img {
     width: 250px;
@@ -2132,7 +2172,6 @@ iframe {
   }
   .carousel-caption h1 {
     font-size: 3em !important;
-    padding-top: 300px;
   }
   .carousel .carousel-indicators {
     bottom: 110px;
@@ -2156,7 +2195,6 @@ iframe {
     background: -webkit-gradient(linear, left top, left bottom, from(#506587), color-stop(48.44%, rgba(124, 124, 124, 0)), to(#506587));
     background: -o-linear-gradient(top, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
     background: linear-gradient(180deg, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
-    mix-blend-mode: multiply;
   }
   .section-pink .advantage-container {
     padding: 50px 0 60px !important;
@@ -2668,7 +2706,9 @@ iframe {
   }
   .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile {
     font-size: 14px;
-    max-height: 54px;
+  }
+  select {
+    height: 54px;
   }
   .advantage-text {
     display: block !important;
@@ -2805,6 +2845,9 @@ iframe {
   .personal .personal-container__items-mobile .carousel-control-next:hover .glyphicon-chevron-left,
   .personal .personal-container__items-mobile .carousel-control-next:hover .glyphicon-chevron-right {
     opacity: 1 !important;
+  }
+  .portfolio-btn {
+    margin: 0;
   }
   iframe {
     display: none;
