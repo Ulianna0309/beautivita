@@ -16,14 +16,14 @@ h1{
   line-height: 7.5em;
   text-align: center;
   color: #FFFFFF;
-  font-family: Bodoni;
+  font-family: 'Bodoni bold cyrillic';
 }
 h2{
   font-size: 4em !important;
   font-weight: 500;
   line-height: 5.1875em;
   color: #FFFFFF;
-  font-family: Bodoni;
+  font-family: 'Bodoni Regular';
 }
 h3 {
   color: #637588;
@@ -45,7 +45,7 @@ li{
   line-height: 83px;
   color: #FFFFFF;
   letter-spacing: 0.67165px;
-  font-family: Bodoni;
+  font-family: 'Bodoni Regular';
 }
 .title-repeat:before{
   position: absolute;
@@ -71,8 +71,22 @@ option{
 .collapse:not(.show) {
   display: none !important;
 }
-.carousel-item{
-  background: #d7d7d7;
+.advantage-container {
+  .hidden-mobile{
+     display: none;
+  }
+}
+.en_lang {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 50px;
+}
+.en_lang {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 50px;
 }
 
 
@@ -106,7 +120,7 @@ option{
 }
 @media(max-width: 992px){
   .title-repeat {
-    padding-top: 25px;
+    padding-top: 30px;
   }
   .title-repeat:before {
     left: -50px !important;
@@ -114,13 +128,39 @@ option{
     bottom: 0;
     right: 0;
   }
+  .advantage-container {
+    .hidden-decktop{
+      display: none;
+  }
+    .hidden-mobile{
+      display: block;
+      background: #F55449;
+      width: 100%;
+      border-radius: 0;
+      margin-top: 35px;
+    }
+  }
 }
 @media(max-width: 540px) {
+  h1{
+    font-size: 60px;
+    line-height: 80px;
+    font-family: 'Mont';
+  }
   h2 {
     font-size: 34px !important;
     line-height: 44px;
   }
-
+  .title-repeat {
+    font-size: 34px !important;
+    padding-top: 30px;
+    line-height: 55px;
+  }
+  .team .title__team {
+    margin-left: 0 !important;
+    font-size: 34px !important;
+    line-height: 44px;
+  }
 }
 
 

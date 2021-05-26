@@ -6,11 +6,7 @@
     margin-right: 214px;
     display: flex;
     justify-content: space-between;
-    &__center{
-       a{
-         margin-top: 30px;
-       }
-    }
+
     &__left {
       img{
         margin-bottom: 2em;
@@ -21,6 +17,11 @@
         line-height: 39px;
         color: #BFBFBF;
       }
+    }
+    &__center{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
     }
     &__right{
       nav ul{
@@ -71,6 +72,18 @@
   }
   .footer-container{
     margin-left: 100px;
+    flex-wrap: wrap;
+    margin-right: 114px;
+
+    &__center{
+      width: 100%;
+      align-items: center;
+      margin-top: 20px;
+
+      a{
+        margin-top: 20px;
+      }
+    }
   }
 }
 }
@@ -79,6 +92,7 @@
     .footer-container{
       display: block;
       margin-left: 0;
+      margin-right: 0;
     }
     .footer-container__left{
       margin-right: 0;
@@ -101,6 +115,9 @@
 }
 @media(max-width: 540px){
   iframe{
+    display: none;
+  }
+  .footer-container .footer-container__center {
     display: none;
   }
 }

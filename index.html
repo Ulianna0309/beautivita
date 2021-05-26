@@ -41,7 +41,7 @@
         <ul itemscope itemtype="http://schema.org/SiteNavigationElement" class="header__list">
           <li class="header__item">
             <a href="#salon" class="header__item-link js-scroll"
-            >SALON</a
+            >ABOUT</a
             >
           </li>
           <li class="header__item hidden">
@@ -62,11 +62,13 @@
         </ul>
       </nav>
       <div class="btn-nav">
-        <select class="btn header-btn">
-          <option>EN</option>
-          <option>RU</option>
-        </select>
-        <a href="" class="btn header-btn">Join us</a>
+        <a href="#" class="button en_lang btn header-btn">
+          En
+        </a>
+        <a href="#" class="button rus_lang btn header-btn">
+          Ru
+        </a>
+        <a href="#" class="btn header-btn">Join us</a>
       </div>
         <div class="header-navigation__btn">
           <span class="header-navigation__btn-row"></span>
@@ -79,22 +81,24 @@
     </div>
     </div>
 </header>
- <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+ <section id="carouselExample" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
    </ol>
-   <div class="carousel-inner">
+   <div class="carousel-inner carousel-block">
      <div class="carousel-item active">
        <img class="d-block w-100 img-slider" src="assets/img/header-slider.png" alt="Первый слайд">
      </div>
      <div class="carousel-caption d-md-block slider-btn">
         <div class="btn-nav__mobile">
-          <select class="header-btn__mobile">
-            <option>EN</option>
-            <option>RU</option>
-          </select>
+          <a href="#" class="button en_lang header-btn__mobile">
+            En
+          </a>
+          <a href="#" class="button rus_lang header-btn__mobile">
+            Ru
+          </a>
           <a href="" class="header-btn__mobile">Join us</a>
         </div>
         <h1>Our Hairstyles <br> enhances <br> your style</h1>
@@ -115,11 +119,13 @@
   <div class="section-pink__all">
   <div class="advantage-container">
     <div class="advantage-left">
-      <h2 class="advantage-title title-repeat">The advantages of <a href=""><img src="assets/img/logo.svg" alt="logo"></a></h2>
+      <h2 class="advantage-title title-repeat">The advantages</br>of <a href=""><img src="assets/img/logo.svg" alt="logo"></a></h2>
       <div class="advantage-left__text">
         <p class="advantage-text d-none d-lg-block">The classic salone in a nutshell is my childhood dream come true. Ever since I was 8 years old I knew what I wanted to dedicate my life’s work too – being a hairstylist and providing my clients with the highest quality service and confidence-building looks.</p>
         <p>
-          <p class="advantage-text mobile d-lg-none d-block d-flex align-items-end">The classic salone in a nutshell is my childhood dream come true...  <a class="btn btn-primary d-lg-none d-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <p class="advantage-text mobile d-lg-none">The classic salone in a nutshell is my childhood dream come true.
+        Ever since I was 8 years old I knew what I wanted to dedicate my life’s work too – being a hairstylist and providing my clien...
+        <a class="btn btn-primary d-lg-none " data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
         more
       </a>
       </p>
@@ -128,16 +134,19 @@
             <p class="advantage-text">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
           </div>
         </div>
-        <button type="button" class="btn btn-danger">Become a member of our team</button>
+        <button type="button" class="btn btn-danger hidden-decktop">Become a member of our team</button>
       </div>
     </div>
     <div class="advantage-right">
       <div class="advantage__overlay"></div>
+      <div class="">
       <img src="assets/img/video.svg" alt="video">
-    <!--  <video src="" poster="assets/img/video.svg" controls></video>-->
       <a class="advantage-right__btn-play"><img src="assets/img/play.svg" alt="play"></a>
+      </div>
     </div>
+    <button type="button" class="btn btn-danger hidden-mobile">Become a member of our team</button>
   </div>
+
   </div>
 </section>
   <section class="section-pink feature">
@@ -364,7 +373,7 @@
       <img src="assets/img/p10.svg" class="portfolio-icon" alt="portfolio10">
     </div>
     <div class="portfolio-btn text-center d-flex justify-content-center">
-      <a href="#" class="btn btn-danger d-flex justify-content-center align-items-center">See more on Instagram <img src="assets/img/inst.svg" alt="instagram" class="btn-danger__icon"></a>
+      <a href="https://instagram.com/labeautivita?r=nametag" class="btn btn-danger d-flex justify-content-center align-items-center">See more on Instagram <img src="assets/img/inst.svg" alt="instagram" class="btn-danger__icon"></a>
     </div>
   </section>
   <section class="section-pink team">
