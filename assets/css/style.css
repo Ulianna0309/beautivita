@@ -677,6 +677,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px;
 }
 
 .header .btn-nav .header-btn {
@@ -2408,7 +2409,7 @@ iframe {
   }
   .header {
     height: 112px;
-    padding: 10px 40px 10px 20px;
+    padding: 10px 20px 10px 20px;
   }
   .header .header__nav {
     display: none;
@@ -2968,10 +2969,6 @@ iframe {
     display: block;
     margin-bottom: 23px;
   }
-  .header_logo-link img {
-    width: 80% !important;
-    padding-top: 10px;
-  }
   .team .personal-container__items-mobile .carousel-control-next {
     top: -200px !important;
   }
@@ -3018,9 +3015,6 @@ iframe {
 @media (max-width: 420px) {
   .carousel-caption h1 {
     padding-top: 40px !important;
-  }
-  .header_logo-link img {
-    width: 90% !important;
   }
   .personal-container {
     padding: 20px 30px 20px 32px;
