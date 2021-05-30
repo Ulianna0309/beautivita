@@ -1263,8 +1263,11 @@ iframe{
       font-size: 40px;
     }
   }
-  .touch .touch-container {
-    display: block !important;
+  .touch{
+    .touch-container {
+      display: block !important;
+      max-width: 100%;
+    }
   }
   .touch .touch-left {
     width: 100%;

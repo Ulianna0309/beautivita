@@ -2732,6 +2732,7 @@ iframe {
   }
   .touch .touch-container {
     display: block !important;
+    max-width: 100%;
   }
   .touch .touch-left {
     width: 100%;
@@ -2830,9 +2831,6 @@ iframe {
   }
   .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile {
     font-size: 14px;
-  }
-  select {
-    height: 54px;
   }
   .advantage-text {
     display: block !important;
