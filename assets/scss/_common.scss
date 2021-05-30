@@ -71,11 +71,6 @@ option{
 .collapse:not(.show) {
   display: none !important;
 }
-.advantage-container {
-  .hidden-mobile{
-     display: none;
-  }
-}
 .rus_lang {
   position: absolute;
   top: -9999px;
@@ -123,6 +118,11 @@ option{
    //min-height: 800px;
    height: 100%;
 }
+.section-pink  {
+  .hidden-mobile{
+    display: none;
+  }
+}
 
 
 
@@ -163,9 +163,11 @@ option{
     right: 0;
   }
   .advantage-container {
-    .hidden-decktop{
+    .hidden-decktop {
       display: none;
+    }
   }
+  .section-pink{
     .hidden-mobile{
       display: block;
       background: #F55449;

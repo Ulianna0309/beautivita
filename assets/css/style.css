@@ -86,10 +86,6 @@ option {
   display: none !important;
 }
 
-.advantage-container .hidden-mobile {
-  display: none;
-}
-
 .rus_lang {
   position: absolute;
   top: -9999px;
@@ -145,6 +141,10 @@ option {
 
 .w-100 {
   height: 100%;
+}
+
+.section-pink .hidden-mobile {
+  display: none;
 }
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
@@ -950,7 +950,7 @@ template {
 
 .advantage-right {
   position: relative;
-  margin-top: 32px;
+  margin-top: 52px;
   margin-left: 50px;
   width: 50%;
 }
@@ -2395,7 +2395,7 @@ iframe {
   .advantage-container .hidden-decktop {
     display: none;
   }
-  .advantage-container .hidden-mobile {
+  .section-pink .hidden-mobile {
     display: block;
     background: #F55449;
     width: 100%;
