@@ -2139,6 +2139,7 @@ iframe {
   }
   .carousel-caption h1 {
     font-size: 80px !important;
+    padding-bottom: 18px;
   }
   .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left, .portfolio-container__left, .team-container__left {
     margin-left: 200px;
