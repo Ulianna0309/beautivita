@@ -118,6 +118,11 @@ option {
   left: 0;
   width: 100%;
   background-color: lightgray;
+  height: 100%;
+  z-index: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .disapper {
