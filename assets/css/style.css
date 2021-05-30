@@ -2459,14 +2459,18 @@ iframe {
     height: 80%;
   }
   .carousel-inner .d-md-block .btn-nav__mobile {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile {
     border: 2px solid #F55449;
     font-size: 18px;
     text-align: right;
     color: #FFFFFF;
-    padding: 15px 40px;
+    padding: 12px 40px;
     text-transform: uppercase;
     font-weight: 600;
     -webkit-transition: 0.3s;
@@ -2474,14 +2478,8 @@ iframe {
     transition: 0.3s;
     height: 50px;
   }
-  .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile:first-child {
-    margin-right: 20px;
-  }
   .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile:hover {
     background-color: #F55449;
-  }
-  .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile .btn-nav__mobile {
-    display: block;
   }
   .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile {
     background: transparent;
