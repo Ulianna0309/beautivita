@@ -61,7 +61,6 @@
 .title-repeat{
   & img{
     width: 349px;
-    margin-top: 20px;
     margin-left: 20px;
   }
 }
@@ -745,10 +744,15 @@ iframe{
   .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left, .portfolio-container__left, .team-container__left {
     margin-left: 200px;
   }
-  .advantage-title img {
-    width: 250px;
-    margin-top: 20px;
+  .advantage-title{
+    letter-spacing: 0;
+
+    img{
+      width: 250px;
+      margin-left: 20px;
+    }
   }
+
   .advantage-left__text {
     margin-left: 0;
   }

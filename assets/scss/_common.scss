@@ -76,17 +76,53 @@ option{
      display: none;
   }
 }
-.en_lang {
+.rus_lang {
   position: absolute;
   top: -9999px;
   left: -9999px;
   width: 50px;
 }
-.en_lang {
+.rus_lang {
   position: absolute;
   top: -9999px;
   left: -9999px;
   width: 50px;
+}
+.loader {
+  height: 100%;
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightgray;
+}
+
+img {
+  width: 256px;
+}
+
+.disapper {
+  animation: vanish 0s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 
