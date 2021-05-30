@@ -22,6 +22,14 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+
+       a {
+         transition: 0.5s;
+
+         &:hover {
+           transform: scale(1.2);
+         }
+       }
     }
     &__right{
       nav ul{
@@ -37,7 +45,7 @@
           transition: 0.3s;
           border-bottom: 3px solid transparent;
           &:hover{
-            border-bottom: 3px solid #F55449 !important;
+            color: #F55449 !important;
           }
           &.last{
             margin-right: 0;

@@ -134,10 +134,15 @@ $(".button.en_lang").click(function(){
     }
 });
 
-var loader = document.querySelector(".loader");
-window.addEventListener("load", () => {
-    loader.classList.add("disapper");
+
+$(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+        $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
 });
+
+
 
 
 

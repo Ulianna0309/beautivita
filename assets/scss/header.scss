@@ -28,11 +28,11 @@
   .header__nav {
     align-items: center;
     display: flex;
-    margin-top: 15px;
+    margin-top: 20px;
     z-index: 100;
 
     a {
-      font-weight: 800;
+      font-weight: 400;
       font-size: 0.875em;
       text-transform: uppercase;
       color: #FFFFFF;
@@ -42,13 +42,14 @@
       transition: 0.3s;
       border-bottom: 3px solid transparent;
       font-family: 'Bodoni Regular';
-
+       &:hover{
+         color: #F55449;
+       }
     }
 
     &-block {
       display: flex;
       align-items: center;
-      padding: 10px;
     }
   }
     .btn-nav{
@@ -59,6 +60,7 @@
         text-align: right;
         color: #FFFFFF;
         transition: 0.5s;
+        font-family: Bodoni;
 
         &:last-child{
           margin-left: 33px;
@@ -278,6 +280,9 @@
       a{
         max-width: 110px;
       }
+      &-block{
+        padding: 10px;
+      }
     }
     .header__nav--active {
       display: block !important;
@@ -288,7 +293,7 @@
     .header__list {
       display: block;
       position: absolute;
-      top: 96px;
+      top: 90px;
       right: 0;
       width: 260px;
       height: 100vh;

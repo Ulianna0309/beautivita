@@ -168,7 +168,7 @@
   background: #B9C6CE;
 }
 .creative-container {
-  padding: 62px 0 148px 0;
+  padding: 62px 0 158px 0;
   .creative-container__bottom{
     margin-top: 114px;
   }
@@ -298,7 +298,8 @@
     display: grid;
     grid-template-areas:
        "g1 g2 g3 g4 g5"
-       "g1 g6 g7 g8 g9";
+       "g1 g6 g7 g8 g5"
+       "g1 g9 g7 g8 g5";
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
     justify-items: center;
@@ -417,13 +418,14 @@
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: 'Mont';
   }
 }
 .touch{
   .touch-container {
-    max-width: 70%;
-    margin: 0 auto;
+    max-width: 60%;
+    margin-left: 325px;
   }
   .title-repeat{
     margin-bottom: 64px !important;
@@ -560,6 +562,10 @@ iframe{
       &.slick-center {
         height: 630px;
         width: 400px !important;
+        & .card__tooltip {
+          display: block;
+
+        }
 
 
         &:hover {
@@ -579,8 +585,8 @@ iframe{
           display: block;
         }
         .card__tooltip {
-          display: none;
-          visibility: hidden;
+          //display: none;
+          //visibility: hidden;
           z-index: 100;
           height: 100%;
           width: 325px;
@@ -717,16 +723,26 @@ iframe{
 
 
 @media(max-width: 1800px) {
+  .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left, .portfolio-container__left, .team-container__left {
+    margin-left: 200px;
+  }
   .personal {
     .personal-container {
       margin-left: 200px !important;
     }
   }
+  .touch {
+    .touch-container {
+      max-width: 70%;
+      margin-left: 200px;
+    }
+  }
   .carousel .carousel-indicators {
-    bottom: 9em;
+    bottom: 7em;
   }
   .advantage-title{
     max-width: 522px;
+    letter-spacing: 0;
   }
   .portfolio {
     & .portfolio-container {
@@ -752,6 +768,12 @@ iframe{
       width: 250px;
       margin-left: 20px;
     }
+  }
+  .section-pink .advantage-container{
+    margin-right: 50px !important;
+    padding: 40px 0 60px !important;
+    margin-top: 0 !important;
+    position: relative !important;
   }
 
   .advantage-left__text {
@@ -786,12 +808,6 @@ iframe{
 
 @media(max-width: 1400px)  {
   .section-pink {
-    .advantage-container {
-      margin-right: 50px !important;
-      padding: 40px 0 60px !important;
-      margin-top: 0 !important;
-      position: relative !important;
-    }
     .section-pink__all {
       height: auto !important;
     }
@@ -856,6 +872,19 @@ iframe{
 
 
   @media (max-width: 1200px) {
+    .slick-slider .slick-slide.slick-current .card__tooltip, .team .slick-slider .slick-slide.slick-center .card__tooltip {
+      padding: 20px;
+      top: 15%;
+      left: 0;
+      width: 100%;
+      border-radius: 24px 24px 0 0;
+    }
+    .portfolio .portfolio-container{
+      margin-left: 123px;
+    }
+    .touch .touch-container {
+      margin-left: 123px;
+    }
     .section-pink {
       .advantage-container {
         padding: 50px 0 60px !important;
@@ -870,7 +899,7 @@ iframe{
       }
     }
     .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left, .portfolio-container__left, .team-container__left {
-      margin-left: 100px;
+      margin-left: 123px;
       margin-right: 30px;
     }
     .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left {
@@ -959,8 +988,10 @@ iframe{
   }
 
   .creative-container {
-    padding: 62px 0 68px 0;
-
+    padding: 62px 0 158px 0;
+    @media (max-width:1200px) {
+      padding: 62px 0 68px 0;
+    }
     & .card .card__tooltip {
       padding: 20px;
       bottom: 0;
@@ -968,14 +999,20 @@ iframe{
     .creative-title {
       margin-bottom: 20px;
     }
-
     }
 
 
 @media (max-width:992px) {
+  .touch .touch-container{
+  margin-left: 0;
+  }
   .carousel-inner .d-md-block .btn-nav__mobile .header-btn__mobile {
     background: transparent;
     outline: none;
+  }
+  .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left, .portfolio-container__left, .team-container__left {
+    margin-left: 50px;
+    margin-right: 30px;
   }
   .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left {
     margin-left: 0;
@@ -1214,6 +1251,10 @@ iframe{
 
       .slick-slider .slick-slide.slick-current .card__tooltip, .team .slick-slider .slick-slide.slick-center .card__tooltip {
         padding: 20px;
+        top: 15%;
+        left: 0;
+        width: 100%;
+        border-radius: 24px 24px 0 0;
       }
 
       .slick-slider .slick-slide.slick-current .card__tooltip p:before, .team .slick-slider .slick-slide.slick-center .card__tooltip p:before {
