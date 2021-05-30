@@ -126,10 +126,6 @@ option {
   background-color: lightgray;
 }
 
-img {
-  width: 256px;
-}
-
 .disapper {
   -webkit-animation: vanish 0s forwards;
           animation: vanish 0s forwards;
