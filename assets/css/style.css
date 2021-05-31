@@ -2329,7 +2329,7 @@ iframe {
     height: 400px;
   }
   .team .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .team .slick-slider .slick-slide.slick-center:hover .card__tooltip {
-    top: 20%;
+    top: 100%;
     left: 0;
     width: 100%;
     border-radius: 24px 24px 0 0;
@@ -2622,6 +2622,12 @@ iframe {
   }
   .slider-img {
     display: none;
+  }
+  .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .slick-slider .slick-slide.slick-center:hover .card__tooltip {
+    top: 100% !important;
+    left: 0;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
   }
   .touch .touch-container {
     margin-left: 0;
@@ -3054,8 +3060,8 @@ iframe {
   .team .team-container {
     margin-right: 0 !important;
   }
-  .team .team-container .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .team-container .team .team .slick-slider .slick-slide.slick-center:hover .card__tooltip {
-    top: 15%;
+  .team .team-container .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .team-container .team .slick-slider .slick-slide.slick-center:hover .card__tooltip {
+    top: 100% !important;
     left: 0;
     width: 100%;
     border-radius: 24px 24px 0 0;
@@ -3207,6 +3213,13 @@ iframe {
   .team .team-container .slick-slider .slick-slide.slick-current .card__tooltip p:before, .team .team-container .team .team-container .team .slick-slider .slick-slide.slick-center .card__tooltip p:before {
     left: 18%;
   }
+  .team .team-container .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .team-container .team .slick-slider .slick-slide.slick-center:hover .card__tooltip {
+    top: 100% !important;
+    left: 0;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    padding: 20px;
+  }
   .team .team-container .slick-slider .slick-slider__item {
     height: 320px;
     margin-left: 10px !important;
@@ -3224,9 +3237,6 @@ iframe {
   }
   .team .team-container .team-container {
     padding: 30px !important;
-  }
-  .team .team-container .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .team-container .team .team .slick-slider .slick-slide.slick-center:hover .card__tooltip {
-    top: 7% !important;
   }
   .team .team-container .personal-container__items-mobile .carousel-control-next {
     top: -230px !important;

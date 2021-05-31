@@ -848,7 +848,7 @@ iframe{
       height: 400px ;
     }
     .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .slick-slider .slick-slide.slick-center:hover .card__tooltip{
-      top: 20%;
+      top: 100%;
       left: 0;
       width: 100%;
       border-radius: 24px 24px 0 0;
@@ -1003,6 +1003,12 @@ iframe{
 
 
 @media (max-width:992px) {
+  .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .slick-slider .slick-slide.slick-center:hover .card__tooltip{
+    top: 100% !important;
+    left: 0;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+  }
   .touch .touch-container{
   margin-left: 0;
   }
@@ -1452,16 +1458,13 @@ iframe{
   .team {
     .team-container {
       margin-right: 0 !important;
-
-      .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .team .slick-slider .slick-slide.slick-center:hover .card__tooltip {
-        top: 15%;
+      .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .slick-slider .slick-slide.slick-center:hover .card__tooltip{
+        top: 100% !important;
         left: 0;
         width: 100%;
         border-radius: 24px 24px 0 0;
         padding: 20px;
       }
-
-
       .slick-slider .slick-slide.slick-current .card__tooltip p:before, .team .slick-slider .slick-slide.slick-center .card__tooltip p:before {
         position: absolute;
         top: 20px;
@@ -1637,8 +1640,17 @@ iframe{
       .slick-slider .slick-slide.slick-current .card__tooltip p:before, .team .team-container .team .slick-slider .slick-slide.slick-center .card__tooltip p:before {
         left: 18%;
       }
+      .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .slick-slider .slick-slide.slick-center:hover .card__tooltip{
+        top: 100% !important;
+        left: 0;
+        width: 100%;
+        border-radius: 24px 24px 0 0;
+        padding: 20px;
+      }
 
-        .slick-slider .slick-slider__item {
+
+
+      .slick-slider .slick-slider__item {
           height: 320px;
           margin-left: 10px !important;
           margin-right: 10px !important;
@@ -1656,10 +1668,6 @@ iframe{
       .team-container {
         padding: 30px !important;
       }
-      .slick-slider .slick-slide.slick-current:hover .card__tooltip, .team .team .slick-slider .slick-slide.slick-center:hover .card__tooltip {
-        top: 7% !important;
-      }
-
 
       .personal-container__items-mobile {
         .carousel-control-next {
