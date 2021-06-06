@@ -81,69 +81,10 @@ option{
   top: -9999px;
   left: -9999px;
 }
-.loaderArea {
-  background:  #F3E2DB;
-  overflow: hidden;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right:0;
-  bottom:0;
-  z-index: 100000;
-}
-.loader {
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  left: 50%;
-  margin-left: -20px;
-  top: 50%;
-  margin-top: -20px;
-}
-
-.loader:before,
-.loader:after {
-  content: "";
-  height: 40px;
-  width: 40px;
-  border: 8px solid #F55449;
-  border-radius: 10px;
-  position: absolute;
-  top: 0;
-}
-
-.loader:before {
-  animation: animate 2s infinite linear;
-}
-
-@keyframes animate {
-  0% {
-    transform: rotate(0) skew(0);
-  }
-
-  100% {
-    transform: rotate(180deg) skew(360deg);
-  }
-}
-
-
-.loader:after {
-  animation: animate2 2s infinite linear;
-}
-
-@keyframes animate2 {
-  0% {
-    transform: rotate(0) skew(0);
-  }
-
-  100% {
-    transform: rotate(-180deg) skew(-360deg);
-  }
-}
 
 
 
- .w-100{
+.w-100{
   height: 100vh !important;
 }
 .section-pink  {
@@ -191,6 +132,90 @@ option{
 }
 
 
+
+
+
+.loaderArea {
+  background:  #F3E2DB;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  z-index: 100000;
+}
+.loader {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+ 
+}
+
+
+.demo {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	position: absolute;
+	top: 40%;
+	left: calc(50% - 50px);
+}
+
+.circle {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.circle .inner {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	border: 5px solid #F55449;
+	border-right: none;
+	border-top: none;
+	background-clip: padding;
+	box-shadow: inset 0px 0px 10px #F55449;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.circle:nth-of-type(0) {
+	transform: rotate(0deg);
+}
+
+.circle:nth-of-type(0) .inner {
+	animation: spin 2s infinite linear;
+}
+
+.circle:nth-of-type(1) {
+	transform: rotate(70deg);
+}
+
+.circle:nth-of-type(1) .inner {
+	animation: spin 2s infinite linear;
+}
+
+.circle:nth-of-type(2) {
+	transform: rotate(140deg);
+}
+
+.circle:nth-of-type(2) .inner {
+	animation: spin 2s infinite linear;
+}
+
+.demo {
+	animation: spin 5s infinite linear;
+}
 
 
   @media (max-width: 1800px) {
@@ -254,7 +279,7 @@ option{
   h1{
     font-size: 60px;
     line-height: 80px;
-    font-family: 'Mont';
+    font-family: 'Bodoni bold cyrillic';
   }
   h2 {
     font-size: 34px !important;

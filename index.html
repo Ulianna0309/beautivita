@@ -25,8 +25,12 @@
   <link rel="stylesheet" href="assets/libs/slick-carousel/slick/slick.css">
 </head>
 <body>
-<div class="loaderArea">
-  <div class="loader"></div>
+  <div class=" loaderArea">
+    <div class="demo">
+        <div class="circle loader">
+          <div class="inner"></div>
+        </div>
+    </div>
 </div>
 <header class="header js-scroll" id="home">
     <div class="header__wrapper">
@@ -44,22 +48,32 @@
         <ul itemscope itemtype="http://schema.org/SiteNavigationElement" class="header__list">
           <li class="header__item">
             <a href="#salon" class="header__item-link js-scroll"
-            >ABOUT</a
+            >Creator</a
             >
           </li>
           <li class="header__item hidden">
             <a href="#stylist" class="header__item-link js-scroll"
-            >STYLISTS</a
+            >Concept</a
             >
           </li>
           <li class="header__item visible">
             <a href="#services" class="header__item-link js-scroll"
-            >SERVICES</a
+            >Artists</a
             >
           </li>
           <li class="header__item">
             <a href="#contact" class="header__item-link js-scroll"
-            >CONTACT</a
+            >Collections</a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#contact" class="header__item-link js-scroll"
+            >Services</a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#contact" class="header__item-link js-scroll"
+            >Contacts</a
             >
           </li>
         </ul>
@@ -71,7 +85,27 @@
         <a href="#" class="button rus_lang btn header-btn">
           Ru
         </a>
-        <a href="#" class="btn header-btn">Join us</a>
+        <a href="#" class="btn header-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Join us</a>
+       <!-- Модальное окно -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Заголовок модального окна</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button type="button" class="btn btn-primary">Понял</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       </div>
         <div class="header-navigation__btn">
           <span class="header-navigation__btn-row"></span>
@@ -106,10 +140,11 @@
         </div>
         <h1>Our Hairstyles <br> enhances <br> your style</h1>
        <div class="d-block">
+        <p class="header-subtitle">Для заказа услуг скачайте наше приложение</p>
           <a href="#" class="header-btn__down"><img src="assets/img/App-btn.svg" alt="apple-store"></a>
           <a href="#" class="header-btn__down"><img src="assets/img/Google-btn.svg" alt="google-store"></a>
        </div>
-        <img src="assets/img/phone-header.svg" class="slider-img" alt="slier-img">
+        <img src="assets/img/phone.png" class="slider-img" alt="slier-img">
       </div>
      <div class="carousel-item">
        <img class="d-block w-100 img-slider" src="assets/img/header-slider.png" alt="Второй слайд">
@@ -256,6 +291,22 @@
           <div class="card__overlay"></div>
           <h4 itemprop="name" class="card__title">Face & Skin</h4>
           <img src="assets/img/creative2.svg" class="card-img-top" alt="skin">
+          <div class="card__tooltip ">
+            <h4 class="tooltip-title">Makeup services</h4>
+            <ul itemprop="description" class="tooltip-list">
+              <li class="tooltip-list__item"><img src="assets/img/list.svg" alt="list" class="tooltip-list__img">Day makeup (natural)</li>
+              <li class="tooltip-list__item"><img src="assets/img/list.svg" alt="list" class="tooltip-list__img">Evening makeup</li>
+              <li class="tooltip-list__item"><img src="assets/img/list.svg" alt="list" class="tooltip-list__img">Makeup master class (1.5 h)</li>
+              <li class="tooltip-list__item"><img src="assets/img/list.svg" alt="list" class="tooltip-list__img">Eyelashes (coloring, extension,
+                keratin perm)</li>
+              <li class="tooltip-list__item"><img src="assets/img/list.svg" alt="list" class="tooltip-list__img">Eyebrows (correction, coloring, fixation)</li>
+            </ul>
+          </div>
+        </div>
+        <div itemscope itemtype="http://schema.org/Product" class="card">
+          <div class="card__overlay"></div>
+          <h4 itemprop="name" class="card__title">Personal stylist</h4>
+          <img src="assets/img/personal.svg" class="card-img-top" alt="nails">
           <div class="card__tooltip ">
             <h4 class="tooltip-title">Makeup services</h4>
             <ul itemprop="description" class="tooltip-list">
@@ -575,11 +626,11 @@
 </main>
 <footer class="footer">
   <div class="footer-container">
-    <div itemscope itemtype="http://schema.org/Organization" class="footer-container__left">
+  <!--<div itemscope itemtype="http://schema.org/Organization" class="footer-container__left">
       <a href="#home" class="d-block js-scroll"><img src="assets/img/logo.svg" alt="logo"></a>
       <a itemprop="telephone" href="tel: (310) 798 2672" class="d-block">(310) 798 2672</a>
       <a itemprop="email" href="mailto: Info@classicsalone.com" class="d-block">Info@classicsalone.com</a>
-    </div>
+    </div>-->
     <div class="footer-container__right text-center">
       <nav class="navbar-nav">
         <ul>

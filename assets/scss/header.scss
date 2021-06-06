@@ -113,7 +113,7 @@
 }
 .carousel-caption h1 {
   margin: 0 auto;
-  padding-bottom: 58px;
+  padding-bottom: 38px;
   font-weight: 600;
   text-align: center;
   color: #FFFFFF;
@@ -220,13 +220,23 @@
 .btn-nav__mobile{
   display: none;
 }
+.header-subtitle{
+  font-family: "Mont-Regular", sans-serif !important;
+  font-weight: 500;
+  font-size: 21.4928px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.67165px;
+  color: #FFFFFF;
+  max-width: 437px;
+  margin: 0 auto 22px;
+}
   @media (max-width: 1800px) {
     .carousel-caption h1 {
       margin: 0 auto;
     }
     .carousel-inner .slider-img{
       height: 80%;
-      width: 40%;
     }
     .section-pink .advantage-title{
       font-size: 60px !important;
@@ -256,7 +266,7 @@
     object-fit: cover;
   }
   #carouselExample .carousel-block .carousel-item{
-    height: 812px;
+    height: 882px;
     background: linear-gradient(180deg, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
     mix-blend-mode: multiply;
   }
