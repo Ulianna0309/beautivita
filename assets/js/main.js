@@ -1,4 +1,4 @@
-scroll page
+/*scroll page*/
 (function () {
 
     const smoothScroll = function (targetEl, duration) {

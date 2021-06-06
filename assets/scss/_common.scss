@@ -217,6 +217,136 @@ option{
 	animation: spin 5s infinite linear;
 }
 
+.modal-backdrop{
+  height: auto !important;
+}
+.modal-content{
+  background-color: #F3E2DB !important;
+  padding: 30px 30px 100px 100px;
+  @media (max-width: 1200px) {
+    padding: 20px;
+  }
+  @media (max-width: 768px) {
+    background: #F3E2DB;
+    box-shadow: 0px 21px 21px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 33px 33px 0px 0px !important;
+  }
+}
+.modal-header{
+  width: 100%;
+}
+.modal-title{
+  font-family: 'Bodoni bold cyrillic';
+  font-size: 64px;
+  line-height: 83px;
+  color: #072652;
+  @media (max-width: 1200px) {
+  font-size: 56px;
+  line-height: 100%;
+  }
+}
+.modal-dialog {
+  max-width: 87% !important;
+
+  @media (max-width: 768px) {
+    max-width: 100% !important;
+  }
+}
+.close{
+  color: #072652;
+  display: flex;
+  margin-left: 116px !important;
+}
+.modal-header .close {
+  padding: 0;
+  margin: -1rem -1rem -1rem auto;
+}
+
+
+.input__wrapper {
+  width: 100%;
+  position: relative;
+  margin: 15px 0;
+  text-align: center;
+  height: 143px;
+  border-radius: 7px;
+}
+ 
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.modal-header-block{
+   width: 100%;
+}
+.input__file-icon-wrapper {
+  height: 60px;
+  width: 60px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+ margin: 0 auto;
+}
+ 
+.input__file-button-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #0F001A;
+  opacity: 0.8;
+  margin-top: 35px;
+}
+ 
+.input__file-button {
+  width: 100%;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 auto;
+  height: 143px;
+  padding: 20px 20px 17px 20px;
+  border: 1px dashed #F55449;
+}
+.form-check-label{
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 155.14%;
+  color: #979797;
+  border-radius: 17px;
+}
+#gridCheck:checked+label {
+  border-color: red;
+}
+.btn-primary{
+  background: #F55449 !important;
+  border-radius: 4px !important;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
 
   @media (max-width: 1800px) {
   h2 {

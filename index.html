@@ -85,27 +85,100 @@
         <a href="#" class="button rus_lang btn header-btn">
           Ru
         </a>
-        <a href="#" class="btn header-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Join us</a>
-       <!-- Модальное окно -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <a href="#" class="btn header-btn" data-toggle="modal" data-target="#exampleModal">Join us</a>
+      </div>
+      <!-- Модальное окно -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Заголовок модального окна</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            <button type="button" class="close justify-content-end" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="assets/img/close.svg" alt=""></span>
+            </button>
+            <div class="modal-header d-lg-flex d-md-block">
+              <div class="modal-header-block d-lg-flex justify-content-between d-md-block">
+              <h5 class="modal-title" id="exampleModalLabel">Fill in the form</h5>
+                <a href="/">
+                  <img src="assets/img/logo-modal.svg" alt="logo">
+                </a>
+              </div>
+              </div>
+            <div class="modal-body d-lg-flex d-md-block">
+               <div class="col-lg-4 col-md-12">
+                <form>
+                  <div class="form">
+                    <div class="form-group">
+                      <label for="inputEmail4">What kind of  service do you do? </label>
+                      <input type="text" class="form-control" id="inputEmail4" placeholder="make-up / hair / skin / nails">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword4">Experience in this kind of activity </label>
+                      <input type="date" class="form-control" id="inputPassword4" placeholder="years / months">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress">Work experience</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Salon / company name">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress2">Are you ready for free training with certification in our salon?</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="yes/ no">
+                  </div>
+                </form>
+               </div>
+               <div class="col-lg-4 col-md-12">
+                <form>
+                  <div class="form">
+                    <div class="form-group">
+                      <label for="inputEmail4">Name</label>
+                      <input type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword4">Email</label>
+                      <input type="email" class="form-control" id="inputPassword4">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress">Phone</label>
+                    <input type="phone" class="form-control" id="inputAddress"  placeholder="+7(___)___-__-__">
+                  </div>
+                </form>
+               </div>
+               <div class="col-lg-4 col-md-12">
+                <form>
+                  <div class="form">
+                    <div class="form-group">
+                      <div class="input__wrapper">
+                        <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+                        <label for="input__file" class="input__file-button">
+                           <span class="input__file-icon-wrapper">
+                             <img class="input__file-icon" src="assets/img/file.svg" alt="Выбрать файл" width="60">
+                            </span>
+                           <span class="input__file-button-text">Drag and drop file or click to attach</span>
+                        </label>
+                     </div>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="inputPassword4" placeholder="Link to professional Instagram (if you have))">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        I agree to the privacy policy
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">SEND</button>
+                </form>
+               </div>
             </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-              <button type="button" class="btn btn-primary">Понял</button>
-            </div>
+        <!--<div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+              <button type="button" class="btn btn-primary">Сохранить изменения</button>
+            </div>--> 
           </div>
         </div>
-      </div>
-
-
       </div>
         <div class="header-navigation__btn">
           <span class="header-navigation__btn-row"></span>
@@ -136,7 +209,7 @@
           <a href="#" class="button rus_lang header-btn__mobile">
             Ru
           </a>
-          <a href="" class="header-btn__mobile">Join us</a>
+          <a href="" class="header-btn__mobile" data-toggle="modal" data-target="#exampleModal">Join us</a>
         </div>
         <h1>Our Hairstyles <br> enhances <br> your style</h1>
        <div class="d-block">
