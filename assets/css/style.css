@@ -254,6 +254,10 @@ option {
   padding-right: 0 !important;
 }
 
+.modal .modal-body {
+  padding: 0;
+}
+
 .modal-backdrop {
   height: auto !important;
 }
@@ -333,6 +337,10 @@ option {
 
 .modal-header-block {
   width: 100%;
+}
+
+.modal-header-block img {
+  max-width: 233px;
 }
 
 .input__file-icon-wrapper {
@@ -2957,6 +2965,10 @@ iframe {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    font-size: 34px !important;
+    line-height: 100%;
+    text-align: left;
+    margin-top: 30px;
   }
   .modal-title:before {
     display: block;
