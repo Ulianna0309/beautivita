@@ -216,7 +216,9 @@ option{
 .demo {
 	animation: spin 5s infinite linear;
 }
-
+.modal{
+  padding-right: 0 !important;
+}
 .modal-backdrop{
   height: auto !important;
 }
@@ -244,12 +246,37 @@ option{
   font-size: 56px;
   line-height: 100%;
   }
+  @media (max-width: 768px) {
+    order: 2;
+  }
+  &:before{
+    position: absolute;
+    top: 50px;
+    left: 40%;
+    width: 136px;
+    height: 2px;
+    content: "";
+    background: #FE908C;
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+}
 }
 .modal-dialog {
   max-width: 87% !important;
 
   @media (max-width: 768px) {
     max-width: 100% !important;
+  }
+  .btn-primary{
+    background: #F55449 !important;
+    border-radius: 4px !important;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
   }
 }
 .close{
@@ -282,6 +309,13 @@ option{
 }
 .modal-header-block{
    width: 100%;
+
+   @media (max-width: 768px) {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   
+  }
 }
 .input__file-icon-wrapper {
   height: 60px;
@@ -340,15 +374,7 @@ option{
 #gridCheck:checked+label {
   border-color: red;
 }
-.btn-primary{
-  background: #F55449 !important;
-  border-radius: 4px !important;
-  width: 100%;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
-  color: #FFFFFF;
-}
+
 
 
   @media (max-width: 1800px) {
