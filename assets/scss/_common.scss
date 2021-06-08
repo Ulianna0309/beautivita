@@ -116,9 +116,6 @@ option{
       color: #072652;
     }
   }
-  img{
-    margin-right: 20px;
-  }
   .privacy-link{
     font-size: 20px;
     line-height: 23px;
@@ -128,6 +125,24 @@ option{
     display: block;
     font-family: 'Mont';
     font-weight: bold;
+  }
+  .privacy-img{
+    width: 100%;
+  }
+  .privacy-arrow{
+    margin-right: 20px;
+  }
+}
+.about{
+  p{
+    color: #000000;
+  }
+}
+.blog{
+  p{
+    color: #484848;
+    font-size: 23px;
+    line-height: 27px;
   }
 }
 

@@ -131,10 +131,6 @@ option {
   color: #072652;
 }
 
-.privacy-info img {
-  margin-right: 20px;
-}
-
 .privacy-info .privacy-link {
   font-size: 20px;
   line-height: 23px;
@@ -144,6 +140,24 @@ option {
   display: block;
   font-family: 'Mont';
   font-weight: bold;
+}
+
+.privacy-info .privacy-img {
+  width: 100%;
+}
+
+.privacy-info .privacy-arrow {
+  margin-right: 20px;
+}
+
+.about p {
+  color: #000000;
+}
+
+.blog p {
+  color: #484848;
+  font-size: 23px;
+  line-height: 27px;
 }
 
 .loaderArea {
@@ -1002,7 +1016,7 @@ template {
 }
 
 .carousel .carousel-indicators {
-  bottom: 13em;
+  bottom: 10em;
 }
 
 .carousel .carousel-indicators li {
@@ -1213,7 +1227,7 @@ template {
 
 .advantage-title {
   max-width: 585px;
-  font-size: 88px !important;
+  font-size: 84px !important;
   letter-spacing: -4px;
   line-height: 80px;
 }
@@ -2396,6 +2410,9 @@ iframe {
   }
   .carousel-caption h1 {
     margin: 0 auto;
+    font-size: 70px !important;
+    line-height: 100%;
+    padding-bottom: 18px;
   }
   .carousel-inner .slider-img {
     height: 80%;
@@ -2413,9 +2430,6 @@ iframe {
     max-width: 70%;
     margin-left: 200px;
   }
-  .carousel .carousel-indicators {
-    bottom: 5em;
-  }
   .advantage-title {
     max-width: 522px;
     letter-spacing: 0;
@@ -2426,6 +2440,12 @@ iframe {
   }
   .portfolio .portfolio-icon {
     width: 100%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .carousel .carousel-indicators {
+    bottom: 5em;
   }
 }
 
@@ -2440,11 +2460,6 @@ iframe {
   }
   .carousel-inner .slider-img {
     right: -150px;
-  }
-  .carousel-caption h1 {
-    font-size: 70px !important;
-    line-height: 100%;
-    padding-bottom: 18px;
   }
   .advantage-left, .feature-container__left, .feature-container__list, .creative-container__left, .portfolio-container__left, .team-container__left {
     margin-left: 200px;
