@@ -55,12 +55,15 @@
     .btn-nav{
       .header-btn{
         border: 2px solid #F55449;
-        font-size: 18px;
-        line-height: 24px;
         text-align: right;
         color: #FFFFFF;
         transition: 0.5s;
         font-family: 'Bodoni-Regular';
+        padding: 10px 50px;
+        height: 41px;
+        border-radius: 0;
+        font-size: 18px;
+        line-height: 18px;
 
         &:last-child{
           margin-left: 33px;
@@ -97,9 +100,9 @@
   }
 }
 .carousel .carousel-indicators{
-  bottom: 10em;
-   @media(max-width:1700px) {
-       bottom: 5em;
+  bottom: 186px;
+   @media(max-width:1600px) {
+       bottom: 100px;
      }
 
    & li{
@@ -235,6 +238,48 @@
   max-width: 437px;
   margin: 0 auto 22px;
 }
+.btn-primary, .btn-light{
+  background: transparent !important;
+  border: 2px solid #F55449 !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  text-align: right;
+  color: #FFFFFF !important;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-family: 'Bodoni-Regular';
+  border-radius: 0 !important;
+  width: 65px !important;
+  height: 41px !important;
+
+  &:hover {
+    color: #fff;
+    background-color: #F55449 !important;
+  }
+}
+.toggle-group {
+  .btn-primary, .btn-light {
+    border: none !important;
+    width: auto;
+    height: auto;
+  }
+  .toggle-handle {
+    display: none;
+  }
+  .toggle-on.btn {
+    text-align: center;
+  }
+  .toggle-off.btn {
+    text-align: center;
+  }
+  .toggle-off {
+    left: 44%;
+  }
+}
+
+
+
   @media (max-width: 1800px) {
     .carousel-caption h1 {
       margin: 0 auto;
@@ -276,10 +321,13 @@
   #carouselExample .carousel-block{
     background: linear-gradient(180deg, #506587 0%, rgba(124, 124, 124, 0) 48.44%, #506587 100%);
   }
+  .carousel-inner .slider-img {
+    display: none;
+  }
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .header {
     height: 112px;
     padding: 10px 20px 10px 20px;
@@ -340,16 +388,17 @@
     .btn-nav__mobile {
       display: flex;
       justify-content: space-around;
-      .header-btn__mobile {
+      .header-btn {
         border: 2px solid #F55449;
-        font-size: 18px;
         text-align: right;
         color: #FFFFFF;
-        padding: 12px 40px;
-        text-transform: uppercase;
-        font-weight: 600;
-        transition: 0.3s;
-        height: 50px;
+        transition: 0.5s;
+        font-family: 'Bodoni-Regular';
+        padding: 10px 50px;
+        height: 41px;
+        border-radius: 0;
+        font-size: 18px;
+        line-height: 18px;
 
 
         &:hover {

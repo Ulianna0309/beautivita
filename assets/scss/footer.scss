@@ -84,7 +84,7 @@
     margin-right: 114px;
 
     &__center{
-      width: 100%;
+      width: 50%;
       align-items: center;
       margin-top: 20px;
 
@@ -118,6 +118,9 @@
         width: 100px;
         margin: 0 auto;
       }
+    }
+    .footer-container__center {
+      width: 100%;
     }
   }
 }

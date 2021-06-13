@@ -9,6 +9,7 @@ html {
 body{
   font-family: "Mont-Regular", sans-serif !important;
   font-size: 1em;
+  overflow: hidden;
 }
 h1{
   font-weight: 500;
@@ -285,9 +286,6 @@ option{
     margin-bottom: 30px;
   }
   .line {
-    /*position: absolute;
-    top: 50px;
-    left: 40%;*/
     width: 136px;
     height: 5px;
     content: "";
@@ -305,7 +303,7 @@ option{
   .btn-primary{
     background: #F55449 !important;
     border-radius: 4px !important;
-    width: 100%;
+    width: 100% !important;
     font-weight: bold;
     font-size: 18px;
     line-height: 23px;
@@ -323,7 +321,7 @@ option{
   margin: -1rem -1rem -1rem auto;
 }
 .modal-open{
-  padding-right: 0;
+  padding-right: 0 !important;
 }
 
 

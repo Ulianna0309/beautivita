@@ -899,6 +899,7 @@ iframe{
     }
     .touch .touch-container {
       margin-left: 123px;
+      max-width: 80%;
     }
     .section-pink {
       .advantage-container {
@@ -1053,13 +1054,13 @@ iframe{
     .advantage-left {
       .btn-primary {
         background-color: transparent;
-        border: none;
+        border: none !important;
         color: #F55449 !important;
         font-style: italic;
         padding: 0;
         width: auto;
-        font-size: 26px;
-        line-height: 38px;
+        font-size: 26px !important;
+        line-height: 38px !important;
         margin-bottom: 5px;
 
         &:focus {
