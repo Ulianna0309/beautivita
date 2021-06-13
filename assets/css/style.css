@@ -19,7 +19,7 @@ h1 {
   line-height: 7.5em;
   text-align: center;
   color: #FFFFFF;
-  font-family: 'Bodoni bold cyrillic';
+  font-family: 'Bodoni-bold-cyrillic';
 }
 
 h2 {
@@ -27,7 +27,7 @@ h2 {
   font-weight: 500;
   line-height: 5.1875em;
   color: #FFFFFF;
-  font-family: 'Bodoni Regular';
+  font-family: 'Bodoni-Regular';
 }
 
 h3 {
@@ -54,7 +54,7 @@ li {
   line-height: 83px;
   color: #FFFFFF;
   letter-spacing: 0.67165px;
-  font-family: 'Bodoni Regular';
+  font-family: 'Bodoni-Regular';
 }
 
 .title-repeat:before {
@@ -199,9 +199,8 @@ option {
   border: 5px solid #F55449;
   border-right: none;
   border-top: none;
-  background-clip: padding;
-  -webkit-box-shadow: inset 0px 0px 10px #F55449;
-          box-shadow: inset 0px 0px 10px #F55449;
+  -webkit-box-shadow: inset 0 0 10px #F55449;
+          box-shadow: inset 0 0 10px #F55449;
 }
 
 @-webkit-keyframes spin {
@@ -266,6 +265,7 @@ option {
 
 .modal {
   padding-right: 0 !important;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .modal .modal-body {
@@ -288,21 +288,25 @@ option {
 }
 
 .modal-title {
-  font-family: 'Bodoni bold cyrillic';
+  font-family: 'Bodoni-bold-cyrillic';
   font-size: 64px;
   line-height: 83px;
   color: #072652;
 }
 
-.modal-title:before {
-  position: absolute;
-  top: 50px;
-  left: 40%;
+.line-block {
+  display: none;
+}
+
+.line-block .line {
+  /*position: absolute;
+    top: 50px;
+    left: 40%;*/
   width: 136px;
-  height: 2px;
+  height: 5px;
   content: "";
   background: #FE908C;
-  display: none;
+  border-radius: 7px;
 }
 
 .modal-dialog {
@@ -317,6 +321,7 @@ option {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+  border: none;
 }
 
 .close {
@@ -939,7 +944,7 @@ template {
   -o-transition: 0.3s;
   transition: 0.3s;
   border-bottom: 3px solid transparent;
-  font-family: 'Bodoni Regular';
+  font-family: 'Bodoni-Regular';
 }
 
 .header .header__nav a:hover {
@@ -964,7 +969,7 @@ template {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  font-family: Bodoni;
+  font-family: 'Bodoni-Regular';
 }
 
 .header .btn-nav .header-btn:last-child {
@@ -1785,7 +1790,7 @@ iframe {
 }
 
 .team .title__team {
-  font-family: Bodoni;
+  font-family: 'Bodoni-Regular';
   font-size: 64px !important;
   line-height: 83px;
 }
@@ -2206,17 +2211,17 @@ iframe {
 }
 
 @font-face {
-  font-family: 'Bodoni Regular';
-  src: url("../../assets/font-mont/Bodoni Regular.ttf");
-  src: local("../../Bodoni Regular"), local("Bodoni Regular"), url("../../assets/font-mont/Bodoni Regular.ttf") format("truetype");
+  font-family: 'Bodoni-Regular';
+  src: url("../../assets/font-mont/Bodoni-Regular.ttf");
+  src: local("../../Bodoni-Regular"), local("Bodoni-Regular"), url("../../assets/font-mont/Bodoni-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Bodoni bold cyrillic';
-  src: url("../../assets/font-mont/Bodoni bold cyrillic.ttf");
-  src: local("../../Bodoni bold cyrillic"), local("Bodoni bold cyrillic"), url("../../assets/font-mont/Bodoni bold cyrillic.ttf") format("truetype");
+  font-family: 'Bodoni-bold-cyrillic';
+  src: url("../font-mont/Bodoni-bold-cyrillic.ttf");
+  src: local("../../Bodoni-bold-cyrillic"), local("Bodoni-bold-cyrillic"), url("../font-mont/Bodoni-bold-cyrillic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
@@ -2553,7 +2558,7 @@ iframe {
 
 @media (max-width: 1200px) {
   .modal-content {
-    padding: 20px;
+    padding: 20px 20px 57px 20px;
   }
   .modal-title {
     font-size: 56px;
@@ -2987,8 +2992,14 @@ iframe {
     text-align: left;
     margin-top: 30px;
   }
-  .modal-title:before {
-    display: block;
+  .line-block {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
   }
   .modal-dialog {
     max-width: 100% !important;
@@ -3215,7 +3226,7 @@ iframe {
   h1 {
     font-size: 60px;
     line-height: 80px;
-    font-family: 'Bodoni bold cyrillic';
+    font-family: 'Bodoni-bold-cyrillic';
   }
   h2 {
     font-size: 34px !important;

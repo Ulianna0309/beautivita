@@ -23,18 +23,18 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Bodoni Regular';
-  src: url('../../assets/font-mont/Bodoni Regular.ttf');
-  src: local('../../Bodoni Regular'), local('Bodoni Regular'),
-  url('../../assets/font-mont/Bodoni Regular.ttf') format('truetype');
+  font-family: 'Bodoni-Regular';
+  src: url('../../assets/font-mont/Bodoni-Regular.ttf');
+  src: local('../../Bodoni-Regular'), local('Bodoni-Regular'),
+  url('../../assets/font-mont/Bodoni-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Bodoni bold cyrillic';
-  src: url('../../assets/font-mont/Bodoni bold cyrillic.ttf');
-  src: local('../../Bodoni bold cyrillic'), local('Bodoni bold cyrillic'),
-  url('../../assets/font-mont/Bodoni bold cyrillic.ttf') format('truetype');
+  font-family: 'Bodoni-bold-cyrillic';
+  src: url('../font-mont/Bodoni-bold-cyrillic.ttf');
+  src: local('../../Bodoni-bold-cyrillic'), local('Bodoni-bold-cyrillic'),
+  url('../font-mont/Bodoni-bold-cyrillic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }

@@ -1,4 +1,4 @@
-/*scroll page*/
+/*scroll page
 (function () {
 
     const smoothScroll = function (targetEl, duration) {
@@ -36,7 +36,7 @@
         });
     };
     scrollTo();
-}());
+}());*/
 
 
 $(document).ready(function() {

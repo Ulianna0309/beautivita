@@ -16,14 +16,14 @@ h1{
   line-height: 7.5em;
   text-align: center;
   color: #FFFFFF;
-  font-family: 'Bodoni bold cyrillic';
+  font-family: 'Bodoni-bold-cyrillic';
 }
 h2{
   font-size: 4em !important;
   font-weight: 500;
   line-height: 5.1875em;
   color: #FFFFFF;
-  font-family: 'Bodoni Regular';
+  font-family: 'Bodoni-Regular';
 }
 h3 {
   color: #637588;
@@ -45,7 +45,7 @@ li{
   line-height: 83px;
   color: #FFFFFF;
   letter-spacing: 0.67165px;
-  font-family: 'Bodoni Regular';
+  font-family: 'Bodoni-Regular';
 }
 .title-repeat:before{
   position: absolute;
@@ -190,8 +190,8 @@ option{
 	border: 5px solid #F55449;
 	border-right: none;
 	border-top: none;
-	background-clip: padding;
-	box-shadow: inset 0px 0px 10px #F55449;
+  //background-clip: padding;
+	box-shadow: inset 0 0 10px #F55449;
 }
 
 @keyframes spin {
@@ -231,8 +231,10 @@ option{
 .demo {
 	animation: spin 5s infinite linear;
 }
+
 .modal{
   padding-right: 0 !important;
+  background: rgba(0, 0, 0, 0.4);
 
   .modal-body{
     padding: 0;
@@ -247,7 +249,7 @@ option{
   filter: drop-shadow(0px 21px 21px rgba(0, 0, 0, 0.25));
 
   @media (max-width: 1200px) {
-    padding: 20px;
+    padding: 20px 20px 57px 20px;
   }
   @media (max-width: 768px) {
     background: #F3E2DB;
@@ -258,14 +260,14 @@ option{
 .modal-header{
   width: 100%;
 }
-.modal-title{
-  font-family: 'Bodoni bold cyrillic';
+.modal-title {
+  font-family: 'Bodoni-bold-cyrillic';
   font-size: 64px;
   line-height: 83px;
   color: #072652;
   @media (max-width: 1200px) {
-  font-size: 56px;
-  line-height: 100%;
+    font-size: 56px;
+    line-height: 100%;
   }
   @media (max-width: 768px) {
     order: 2;
@@ -274,20 +276,26 @@ option{
     text-align: left;
     margin-top: 30px;
   }
-  &:before{
-    position: absolute;
+}
+.line-block {
+  display: none;
+  @media (max-width: 768px) {
+    display: flex !important;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .line {
+    /*position: absolute;
     top: 50px;
-    left: 40%;
+    left: 40%;*/
     width: 136px;
-    height: 2px;
+    height: 5px;
     content: "";
     background: #FE908C;
-    display: none;
-    @media (max-width: 768px) {
-      display: block;
-    }
+    border-radius: 7px;
+  }
 }
-}
+
 .modal-dialog {
   max-width: 87% !important;
 
@@ -302,6 +310,7 @@ option{
     font-size: 18px;
     line-height: 23px;
     color: #FFFFFF;
+    border: none;
   }
 }
 .close{
@@ -467,7 +476,7 @@ option{
   h1{
     font-size: 60px;
     line-height: 80px;
-    font-family: 'Bodoni bold cyrillic';
+    font-family: 'Bodoni-bold-cyrillic';
   }
   h2 {
     font-size: 34px !important;
