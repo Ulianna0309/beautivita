@@ -5,6 +5,7 @@
 }
 html {
   overflow-x: hidden;
+  //scroll-behavior: smooth;
 }
 body{
   font-family: "Mont-Regular", sans-serif !important;
@@ -126,6 +127,7 @@ option{
     display: block;
     font-family: 'Mont';
     font-weight: bold;
+
   }
   .privacy-img{
     width: 100%;

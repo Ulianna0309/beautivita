@@ -2112,6 +2112,20 @@ iframe {
   margin-bottom: 50px;
 }
 
+.creative-container .card:hover .card__tooltip .tooltip-list .tooltip-list__item {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.creative-container .card .card__tooltip .tooltip-list__item {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.creative-container .card .card__tooltip .tooltip-title {
+  font-size: 1.2em;
+}
+
 .section-pink__all {
   height: 654px;
 }
@@ -2745,7 +2759,7 @@ iframe {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .header {
     height: 112px;
     padding: 10px 20px 10px 20px;

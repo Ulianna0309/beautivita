@@ -818,6 +818,17 @@ iframe{
     }
   }
 }
+.creative-container .card:hover .card__tooltip .tooltip-list .tooltip-list__item {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+.creative-container .card .card__tooltip .tooltip-list__item{
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+.creative-container .card .card__tooltip .tooltip-title{
+  font-size: 1.2em;
+}
 
 
 @media(max-width: 1400px)  {
